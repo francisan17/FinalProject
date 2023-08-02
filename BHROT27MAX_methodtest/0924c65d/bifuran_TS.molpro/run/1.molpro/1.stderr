@@ -1,0 +1,3 @@
+lsof: WARNING: can't stat() macfuse file system /Users/peterk/pCloud Drive
+      Output information may be incomplete.
+      assuming "dev=36000012" from mount table
