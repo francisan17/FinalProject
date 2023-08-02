@@ -1,0 +1,3245 @@
+<?xml version="1.0"?>
+<molpro xmlns="http://www.molpro.net/schema/molpro-output"
+  xmlns:xsd="http://www.w3.org/1999/XMLSchema"
+  xmlns:cml="http://www.xml-cml.org/schema"
+  xmlns:stm="http://www.xml-cml.org/schema"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+ <job>
+  <stm:metadataList>
+   <stm:metadata name="dc:date" content="2023-08-02T09:11:53+01:00"/>
+   <stm:metadata name="dc:creator" content="peterk"/>
+   <stm:metadata name="cmlm:insilico" content="Molpro"/>
+  </stm:metadataList>
+  <platform pid="78052">
+   <version major="2023" minor="1" SHA="401d111a1dbfa49388eacdf0424f85138b2d30d0"
+     integer_bits="64" parallelism="serial">
+    2023.1
+    <date year="2023" month="8" day="2" hour="9" minute="11" second="53">
+     2023-08-02T09:11:53
+    </date>
+   </version>
+   <licence id="peterk"/>
+   <parallel processes="1" nodes="1" all_processes="1" openmp="1"/>
+   <dimensions natom="400" nvalence="500" nvalence_pno="1000" nbasis="12000" nstate="100"
+     nsymm="16" nrec="1024" nprim="2" ncol="100"/>
+  </platform>
+  <jobstep command="HF-SCF" commandset="SCFPRO">
+   <cml:molecule>
+    <cml:symmetry pointGroup="C1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.62527800830666" y3="2.89809627957375"
+       z3="-0.3936045477419E-01"/>
+     <cml:atom id="a2" elementType="C" x3="-0.3425538827627" y3="1.7374537000331"
+       z3="-0.3150100176433E-01"/>
+     <cml:atom id="a3" elementType="N" x3="0.36138843311159" y3="0.47998433732143"
+       z3="0.1403975045456E-01"/>
+     <cml:atom id="a4" elementType="C" x3="-0.22542645347882" y3="-0.72812870820658"
+       z3="0.9515084552755E-01"/>
+     <cml:atom id="a5" elementType="N" x3="-1.56562722239652" y3="-0.73828988669266"
+       z3="-0.7257090139012E-01"/>
+     <cml:atom id="a6" elementType="S" x3="0.64293020269652" y3="-2.11955820431433"
+       z3="0.35396039167116"/>
+     <cml:atom id="a7" elementType="H" x3="-2.11587316489113" y3="0.9765190100243E-01"
+       z3="-0.3875317825241E-01"/>
+     <cml:atom id="a8" elementType="H" x3="-2.02216029547534" y3="-1.61654192112677"
+       z3="0.7076902579688E-01"/>
+     <cml:atom id="a9" elementType="H" x3="1.34388428549199" y3="0.47744786420014"
+       z3="0.21511755062804"/>
+     <cml:atom id="a10" elementType="H" x3="-0.96428971121995" y3="1.77250469141176"
+       z3="-0.92748736392476"/>
+     <cml:atom id="a11" elementType="H" x3="-1.00987152277285" y3="1.8268441892815"
+       z3="0.8310916029436"/>
+     <cml:atom id="a12" elementType="H" x3="1.29351690735313" y3="2.84225750698511"
+       z3="-0.89453694539721"/>
+     <cml:atom id="a13" elementType="H" x3="0.7941403827619E-01" y3="3.83516192614587"
+       z3="-0.9217618418552E-01"/>
+     <cml:atom id="a14" elementType="H" x3="1.2290593777612" y3="2.90822932438525"
+       z3="0.86522986266675"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a2 a3"/>
+     <cml:bond atomRefs2="a3 a4"/>
+     <cml:bond atomRefs2="a4 a5"/>
+     <cml:bond atomRefs2="a4 a6"/>
+     <cml:bond atomRefs2="a5 a7"/>
+     <cml:bond atomRefs2="a5 a8"/>
+     <cml:bond atomRefs2="a3 a9"/>
+     <cml:bond atomRefs2="a2 a10"/>
+     <cml:bond atomRefs2="a2 a11"/>
+     <cml:bond atomRefs2="a1 a12"/>
+     <cml:bond atomRefs2="a1 a13"/>
+     <cml:bond atomRefs2="a1 a14"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <property name="Energy" method="RHF" principal="true" stateSymmetry="1" stateNumber="1"
+     value="-624.806158429971"/>
+   <property name="One-electron energy" method="RHF" value="-1439.93194880954"/>
+   <property name="Two-electron energy" method="RHF" value="521.713537482692"/>
+   <property name="Kinetic energy" method="RHF" value="624.663760423332"/>
+   <property name="Nuclear energy" method="RHF" value="293.412252896878"/>
+   <property name="Virial quotient" method="RHF" value="-1.000227959449"/>
+   <property name="Dipole moment" method="RHF" principal="true" stateSymmetry="1"
+     stateNumber="1"
+     value="-1.16030659307614 2.19230832748166 -0.912488077801861E-01"/>
+   <time start="09:11:53" end="09:13:34" cpu="77.02" system="8.06" real="101.54"/>
+   <storage units="megabyte" memory="24000.0" sf="0.0" df="11657.1" eaf="0.0"/>
+   <summary overall_method="HF/cc-pVTZ"/>
+  </jobstep>
+  <jobstep command="CCSD" commandset="CCSD">
+   <property name="energy" method="Reference" stateSymmetry="1" stateNumber="1"
+     value="-624.80615842997"/>
+   <single orbital="2.1" energy="-0.0"/>
+   <single orbital="-2.1" energy="-0.0"/>
+   <single orbital="3.1" energy="-0.0"/>
+   <single orbital="-3.1" energy="-0.0"/>
+   <single orbital="4.1" energy="-0.0"/>
+   <single orbital="-4.1" energy="-0.0"/>
+   <single orbital="5.1" energy="-0.0"/>
+   <single orbital="-5.1" energy="-0.0"/>
+   <single orbital="6.1" energy="-0.0"/>
+   <single orbital="-6.1" energy="-0.0"/>
+   <single orbital="7.1" energy="-0.0"/>
+   <single orbital="-7.1" energy="-0.0"/>
+   <single orbital="8.1" energy="-0.0"/>
+   <single orbital="-8.1" energy="-0.0"/>
+   <single orbital="9.1" energy="-0.0"/>
+   <single orbital="-9.1" energy="-0.0"/>
+   <single orbital="10.1" energy="-0.0"/>
+   <single orbital="-10.1" energy="-0.0"/>
+   <single orbital="11.1" energy="-0.0"/>
+   <single orbital="-11.1" energy="-0.0"/>
+   <single orbital="12.1" energy="-0.0"/>
+   <single orbital="-12.1" energy="-0.0"/>
+   <single orbital="13.1" energy="-0.0"/>
+   <single orbital="-13.1" energy="-0.0"/>
+   <single orbital="14.1" energy="0.0"/>
+   <single orbital="-14.1" energy="0.0"/>
+   <single orbital="15.1" energy="0.00000001"/>
+   <single orbital="-15.1" energy="0.00000001"/>
+   <single orbital="16.1" energy="0.00000001"/>
+   <single orbital="-16.1" energy="0.00000001"/>
+   <single orbital="17.1" energy="0.00000002"/>
+   <single orbital="-17.1" energy="0.00000002"/>
+   <single orbital="18.1" energy="0.00000001"/>
+   <single orbital="-18.1" energy="0.00000001"/>
+   <single orbital="19.1" energy="0.00000004"/>
+   <single orbital="-19.1" energy="0.00000004"/>
+   <single orbital="20.1" energy="0.0"/>
+   <single orbital="-20.1" energy="0.0"/>
+   <single orbital="21.1" energy="0.00000023"/>
+   <single orbital="-21.1" energy="0.00000023"/>
+   <single orbital="22.1" energy="-0.00000001"/>
+   <single orbital="-22.1" energy="-0.00000001"/>
+   <single orbital="23.1" energy="-0.00000001"/>
+   <single orbital="-23.1" energy="-0.00000001"/>
+   <single orbital="24.1" energy="0.00000015"/>
+   <single orbital="-24.1" energy="0.00000015"/>
+   <single orbital="25.1" energy="0.00000004"/>
+   <single orbital="-25.1" energy="0.00000004"/>
+   <single orbital="26.1" energy="0.00000007"/>
+   <single orbital="-26.1" energy="0.00000007"/>
+   <single orbital="27.1" energy="0.00000006"/>
+   <single orbital="-27.1" energy="0.00000006"/>
+   <single orbital="28.1" energy="-0.00000016"/>
+   <single orbital="-28.1" energy="-0.00000016"/>
+   <pair orbital1="2.1" orbital2="-2.1" energy="-0.00437966"/>
+   <pair orbital1="-2.1" orbital2="2.1" energy="-0.00437966"/>
+   <pair orbital1="3.1" orbital2="2.1" energy="-0.00000001"/>
+   <pair orbital1="-3.1" orbital2="-2.1" energy="-0.00000001"/>
+   <pair orbital1="3.1" orbital2="-2.1" energy="-0.00001951"/>
+   <pair orbital1="-3.1" orbital2="2.1" energy="-0.00001951"/>
+   <pair orbital1="3.1" orbital2="-3.1" energy="-0.00446765"/>
+   <pair orbital1="-3.1" orbital2="3.1" energy="-0.00446765"/>
+   <pair orbital1="4.1" orbital2="2.1" energy="-0.00000023"/>
+   <pair orbital1="-4.1" orbital2="-2.1" energy="-0.00000023"/>
+   <pair orbital1="4.1" orbital2="-2.1" energy="-0.00000023"/>
+   <pair orbital1="-4.1" orbital2="2.1" energy="-0.00000023"/>
+   <pair orbital1="4.1" orbital2="3.1" energy="-0.00000022"/>
+   <pair orbital1="-4.1" orbital2="-3.1" energy="-0.00000022"/>
+   <pair orbital1="4.1" orbital2="-3.1" energy="-0.00000023"/>
+   <pair orbital1="-4.1" orbital2="3.1" energy="-0.00000023"/>
+   <pair orbital1="4.1" orbital2="-4.1" energy="-0.0045581"/>
+   <pair orbital1="-4.1" orbital2="4.1" energy="-0.0045581"/>
+   <pair orbital1="5.1" orbital2="2.1" energy="-0.00000015"/>
+   <pair orbital1="-5.1" orbital2="-2.1" energy="-0.00000015"/>
+   <pair orbital1="5.1" orbital2="-2.1" energy="-0.00000016"/>
+   <pair orbital1="-5.1" orbital2="2.1" energy="-0.00000016"/>
+   <pair orbital1="5.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="-5.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="5.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="-5.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="5.1" orbital2="4.1" energy="-0.00000001"/>
+   <pair orbital1="-5.1" orbital2="-4.1" energy="-0.00000001"/>
+   <pair orbital1="5.1" orbital2="-4.1" energy="-0.00000001"/>
+   <pair orbital1="-5.1" orbital2="4.1" energy="-0.00000001"/>
+   <pair orbital1="5.1" orbital2="-5.1" energy="-0.00538269"/>
+   <pair orbital1="-5.1" orbital2="5.1" energy="-0.00538269"/>
+   <pair orbital1="6.1" orbital2="2.1" energy="-0.00000001"/>
+   <pair orbital1="-6.1" orbital2="-2.1" energy="-0.00000001"/>
+   <pair orbital1="6.1" orbital2="-2.1" energy="-0.00000001"/>
+   <pair orbital1="-6.1" orbital2="2.1" energy="-0.00000001"/>
+   <pair orbital1="6.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="-6.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="6.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="-6.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="6.1" orbital2="4.1" energy="-0.0"/>
+   <pair orbital1="-6.1" orbital2="-4.1" energy="-0.0"/>
+   <pair orbital1="6.1" orbital2="-4.1" energy="-0.0"/>
+   <pair orbital1="-6.1" orbital2="4.1" energy="-0.0"/>
+   <pair orbital1="6.1" orbital2="5.1" energy="-0.00000019"/>
+   <pair orbital1="-6.1" orbital2="-5.1" energy="-0.00000019"/>
+   <pair orbital1="6.1" orbital2="-5.1" energy="-0.00000129"/>
+   <pair orbital1="-6.1" orbital2="5.1" energy="-0.00000129"/>
+   <pair orbital1="6.1" orbital2="-6.1" energy="-0.00547367"/>
+   <pair orbital1="-6.1" orbital2="6.1" energy="-0.00547367"/>
+   <pair orbital1="7.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="4.1" energy="-0.00000008"/>
+   <pair orbital1="-7.1" orbital2="-4.1" energy="-0.00000008"/>
+   <pair orbital1="7.1" orbital2="-4.1" energy="-0.00000008"/>
+   <pair orbital1="-7.1" orbital2="4.1" energy="-0.00000008"/>
+   <pair orbital1="7.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="-7.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="7.1" orbital2="-7.1" energy="-0.00047261"/>
+   <pair orbital1="-7.1" orbital2="7.1" energy="-0.00047261"/>
+   <pair orbital1="8.1" orbital2="2.1" energy="-0.00000001"/>
+   <pair orbital1="-8.1" orbital2="-2.1" energy="-0.00000001"/>
+   <pair orbital1="8.1" orbital2="-2.1" energy="-0.00000001"/>
+   <pair orbital1="-8.1" orbital2="2.1" energy="-0.00000001"/>
+   <pair orbital1="8.1" orbital2="3.1" energy="-0.00000001"/>
+   <pair orbital1="-8.1" orbital2="-3.1" energy="-0.00000001"/>
+   <pair orbital1="8.1" orbital2="-3.1" energy="-0.00000001"/>
+   <pair orbital1="-8.1" orbital2="3.1" energy="-0.00000001"/>
+   <pair orbital1="8.1" orbital2="4.1" energy="-0.0000002"/>
+   <pair orbital1="-8.1" orbital2="-4.1" energy="-0.0000002"/>
+   <pair orbital1="8.1" orbital2="-4.1" energy="-0.0000002"/>
+   <pair orbital1="-8.1" orbital2="4.1" energy="-0.0000002"/>
+   <pair orbital1="8.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="-8.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="8.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="-8.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="8.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="-8.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="8.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="-8.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="8.1" orbital2="7.1" energy="-0.0003778"/>
+   <pair orbital1="-8.1" orbital2="-7.1" energy="-0.0003778"/>
+   <pair orbital1="8.1" orbital2="-7.1" energy="-0.00101829"/>
+   <pair orbital1="-8.1" orbital2="7.1" energy="-0.00101829"/>
+   <pair orbital1="8.1" orbital2="-8.1" energy="-0.00097303"/>
+   <pair orbital1="-8.1" orbital2="8.1" energy="-0.00097303"/>
+   <pair orbital1="9.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="4.1" energy="-0.0000001"/>
+   <pair orbital1="-9.1" orbital2="-4.1" energy="-0.0000001"/>
+   <pair orbital1="9.1" orbital2="-4.1" energy="-0.0000001"/>
+   <pair orbital1="-9.1" orbital2="4.1" energy="-0.0000001"/>
+   <pair orbital1="9.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="-9.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="9.1" orbital2="7.1" energy="-0.00032465"/>
+   <pair orbital1="-9.1" orbital2="-7.1" energy="-0.00032465"/>
+   <pair orbital1="9.1" orbital2="-7.1" energy="-0.00088997"/>
+   <pair orbital1="-9.1" orbital2="7.1" energy="-0.00088997"/>
+   <pair orbital1="9.1" orbital2="8.1" energy="-0.00066176"/>
+   <pair orbital1="-9.1" orbital2="-8.1" energy="-0.00066176"/>
+   <pair orbital1="9.1" orbital2="-8.1" energy="-0.00091886"/>
+   <pair orbital1="-9.1" orbital2="8.1" energy="-0.00091886"/>
+   <pair orbital1="9.1" orbital2="-9.1" energy="-0.00077201"/>
+   <pair orbital1="-9.1" orbital2="9.1" energy="-0.00077201"/>
+   <pair orbital1="10.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="-2.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="2.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="-3.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="3.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="4.1" energy="-0.0000001"/>
+   <pair orbital1="-10.1" orbital2="-4.1" energy="-0.0000001"/>
+   <pair orbital1="10.1" orbital2="-4.1" energy="-0.0000001"/>
+   <pair orbital1="-10.1" orbital2="4.1" energy="-0.0000001"/>
+   <pair orbital1="10.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="-5.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="5.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="-6.1" energy="-0.0"/>
+   <pair orbital1="-10.1" orbital2="6.1" energy="-0.0"/>
+   <pair orbital1="10.1" orbital2="7.1" energy="-0.00031774"/>
+   <pair orbital1="-10.1" orbital2="-7.1" energy="-0.00031774"/>
+   <pair orbital1="10.1" orbital2="-7.1" energy="-0.0008691"/>
+   <pair orbital1="-10.1" orbital2="7.1" energy="-0.0008691"/>
+   <pair orbital1="10.1" orbital2="8.1" energy="-0.00064693"/>
+   <pair orbital1="-10.1" orbital2="-8.1" energy="-0.00064693"/>
+   <pair orbital1="10.1" orbital2="-8.1" energy="-0.00089777"/>
+   <pair orbital1="-10.1" orbital2="8.1" energy="-0.00089777"/>
+   <pair orbital1="10.1" orbital2="9.1" energy="-0.00056075"/>
+   <pair orbital1="-10.1" orbital2="-9.1" energy="-0.00056075"/>
+   <pair orbital1="10.1" orbital2="-9.1" energy="-0.00078247"/>
+   <pair orbital1="-10.1" orbital2="9.1" energy="-0.00078247"/>
+   <pair orbital1="10.1" orbital2="-10.1" energy="-0.00074406"/>
+   <pair orbital1="-10.1" orbital2="10.1" energy="-0.00074406"/>
+   <pair orbital1="11.1" orbital2="2.1" energy="-0.00005713"/>
+   <pair orbital1="-11.1" orbital2="-2.1" energy="-0.00005713"/>
+   <pair orbital1="11.1" orbital2="-2.1" energy="-0.00029867"/>
+   <pair orbital1="-11.1" orbital2="2.1" energy="-0.00029867"/>
+   <pair orbital1="11.1" orbital2="3.1" energy="-0.0000393"/>
+   <pair orbital1="-11.1" orbital2="-3.1" energy="-0.0000393"/>
+   <pair orbital1="11.1" orbital2="-3.1" energy="-0.00020014"/>
+   <pair orbital1="-11.1" orbital2="3.1" energy="-0.00020014"/>
+   <pair orbital1="11.1" orbital2="4.1" energy="-0.00005812"/>
+   <pair orbital1="-11.1" orbital2="-4.1" energy="-0.00005812"/>
+   <pair orbital1="11.1" orbital2="-4.1" energy="-0.0002466"/>
+   <pair orbital1="-11.1" orbital2="4.1" energy="-0.0002466"/>
+   <pair orbital1="11.1" orbital2="5.1" energy="-0.00001779"/>
+   <pair orbital1="-11.1" orbital2="-5.1" energy="-0.00001779"/>
+   <pair orbital1="11.1" orbital2="-5.1" energy="-0.00005717"/>
+   <pair orbital1="-11.1" orbital2="5.1" energy="-0.00005717"/>
+   <pair orbital1="11.1" orbital2="6.1" energy="-0.00000132"/>
+   <pair orbital1="-11.1" orbital2="-6.1" energy="-0.00000132"/>
+   <pair orbital1="11.1" orbital2="-6.1" energy="-0.00000393"/>
+   <pair orbital1="-11.1" orbital2="6.1" energy="-0.00000393"/>
+   <pair orbital1="11.1" orbital2="7.1" energy="-0.00000105"/>
+   <pair orbital1="-11.1" orbital2="-7.1" energy="-0.00000105"/>
+   <pair orbital1="11.1" orbital2="-7.1" energy="-0.00000341"/>
+   <pair orbital1="-11.1" orbital2="7.1" energy="-0.00000341"/>
+   <pair orbital1="11.1" orbital2="8.1" energy="-0.00000292"/>
+   <pair orbital1="-11.1" orbital2="-8.1" energy="-0.00000292"/>
+   <pair orbital1="11.1" orbital2="-8.1" energy="-0.00000628"/>
+   <pair orbital1="-11.1" orbital2="8.1" energy="-0.00000628"/>
+   <pair orbital1="11.1" orbital2="9.1" energy="-0.00000314"/>
+   <pair orbital1="-11.1" orbital2="-9.1" energy="-0.00000314"/>
+   <pair orbital1="11.1" orbital2="-9.1" energy="-0.00000444"/>
+   <pair orbital1="-11.1" orbital2="9.1" energy="-0.00000444"/>
+   <pair orbital1="11.1" orbital2="10.1" energy="-0.00000309"/>
+   <pair orbital1="-11.1" orbital2="-10.1" energy="-0.00000309"/>
+   <pair orbital1="11.1" orbital2="-10.1" energy="-0.00000442"/>
+   <pair orbital1="-11.1" orbital2="10.1" energy="-0.00000442"/>
+   <pair orbital1="11.1" orbital2="-11.1" energy="-0.00260833"/>
+   <pair orbital1="-11.1" orbital2="11.1" energy="-0.00260833"/>
+   <pair orbital1="12.1" orbital2="2.1" energy="-0.00004191"/>
+   <pair orbital1="-12.1" orbital2="-2.1" energy="-0.00004191"/>
+   <pair orbital1="12.1" orbital2="-2.1" energy="-0.00023174"/>
+   <pair orbital1="-12.1" orbital2="2.1" energy="-0.00023174"/>
+   <pair orbital1="12.1" orbital2="3.1" energy="-0.00006504"/>
+   <pair orbital1="-12.1" orbital2="-3.1" energy="-0.00006504"/>
+   <pair orbital1="12.1" orbital2="-3.1" energy="-0.00038008"/>
+   <pair orbital1="-12.1" orbital2="3.1" energy="-0.00038008"/>
+   <pair orbital1="12.1" orbital2="4.1" energy="-0.00006541"/>
+   <pair orbital1="-12.1" orbital2="-4.1" energy="-0.00006541"/>
+   <pair orbital1="12.1" orbital2="-4.1" energy="-0.00007758"/>
+   <pair orbital1="-12.1" orbital2="4.1" energy="-0.00007758"/>
+   <pair orbital1="12.1" orbital2="5.1" energy="-0.00002311"/>
+   <pair orbital1="-12.1" orbital2="-5.1" energy="-0.00002311"/>
+   <pair orbital1="12.1" orbital2="-5.1" energy="-0.00008701"/>
+   <pair orbital1="-12.1" orbital2="5.1" energy="-0.00008701"/>
+   <pair orbital1="12.1" orbital2="6.1" energy="-0.00000428"/>
+   <pair orbital1="-12.1" orbital2="-6.1" energy="-0.00000428"/>
+   <pair orbital1="12.1" orbital2="-6.1" energy="-0.00001552"/>
+   <pair orbital1="-12.1" orbital2="6.1" energy="-0.00001552"/>
+   <pair orbital1="12.1" orbital2="7.1" energy="-0.00000033"/>
+   <pair orbital1="-12.1" orbital2="-7.1" energy="-0.00000033"/>
+   <pair orbital1="12.1" orbital2="-7.1" energy="-0.00000063"/>
+   <pair orbital1="-12.1" orbital2="7.1" energy="-0.00000063"/>
+   <pair orbital1="12.1" orbital2="8.1" energy="-0.00000089"/>
+   <pair orbital1="-12.1" orbital2="-8.1" energy="-0.00000089"/>
+   <pair orbital1="12.1" orbital2="-8.1" energy="-0.00000125"/>
+   <pair orbital1="-12.1" orbital2="8.1" energy="-0.00000125"/>
+   <pair orbital1="12.1" orbital2="9.1" energy="-0.00000071"/>
+   <pair orbital1="-12.1" orbital2="-9.1" energy="-0.00000071"/>
+   <pair orbital1="12.1" orbital2="-9.1" energy="-0.00000086"/>
+   <pair orbital1="-12.1" orbital2="9.1" energy="-0.00000086"/>
+   <pair orbital1="12.1" orbital2="10.1" energy="-0.00000068"/>
+   <pair orbital1="-12.1" orbital2="-10.1" energy="-0.00000068"/>
+   <pair orbital1="12.1" orbital2="-10.1" energy="-0.00000099"/>
+   <pair orbital1="-12.1" orbital2="10.1" energy="-0.00000099"/>
+   <pair orbital1="12.1" orbital2="11.1" energy="-0.00014601"/>
+   <pair orbital1="-12.1" orbital2="-11.1" energy="-0.00014601"/>
+   <pair orbital1="12.1" orbital2="-11.1" energy="-0.00393774"/>
+   <pair orbital1="-12.1" orbital2="11.1" energy="-0.00393774"/>
+   <pair orbital1="12.1" orbital2="-12.1" energy="-0.00266791"/>
+   <pair orbital1="-12.1" orbital2="12.1" energy="-0.00266791"/>
+   <pair orbital1="13.1" orbital2="2.1" energy="-0.00005146"/>
+   <pair orbital1="-13.1" orbital2="-2.1" energy="-0.00005146"/>
+   <pair orbital1="13.1" orbital2="-2.1" energy="-0.00007462"/>
+   <pair orbital1="-13.1" orbital2="2.1" energy="-0.00007462"/>
+   <pair orbital1="13.1" orbital2="3.1" energy="-0.0000104"/>
+   <pair orbital1="-13.1" orbital2="-3.1" energy="-0.0000104"/>
+   <pair orbital1="13.1" orbital2="-3.1" energy="-0.00003781"/>
+   <pair orbital1="-13.1" orbital2="3.1" energy="-0.00003781"/>
+   <pair orbital1="13.1" orbital2="4.1" energy="-0.00003441"/>
+   <pair orbital1="-13.1" orbital2="-4.1" energy="-0.00003441"/>
+   <pair orbital1="13.1" orbital2="-4.1" energy="-0.00010224"/>
+   <pair orbital1="-13.1" orbital2="4.1" energy="-0.00010224"/>
+   <pair orbital1="13.1" orbital2="5.1" energy="-0.00005895"/>
+   <pair orbital1="-13.1" orbital2="-5.1" energy="-0.00005895"/>
+   <pair orbital1="13.1" orbital2="-5.1" energy="-0.00027606"/>
+   <pair orbital1="-13.1" orbital2="5.1" energy="-0.00027606"/>
+   <pair orbital1="13.1" orbital2="6.1" energy="-0.00005877"/>
+   <pair orbital1="-13.1" orbital2="-6.1" energy="-0.00005877"/>
+   <pair orbital1="13.1" orbital2="-6.1" energy="-0.00029592"/>
+   <pair orbital1="-13.1" orbital2="6.1" energy="-0.00029592"/>
+   <pair orbital1="13.1" orbital2="7.1" energy="-0.0000025"/>
+   <pair orbital1="-13.1" orbital2="-7.1" energy="-0.0000025"/>
+   <pair orbital1="13.1" orbital2="-7.1" energy="-0.00001115"/>
+   <pair orbital1="-13.1" orbital2="7.1" energy="-0.00001115"/>
+   <pair orbital1="13.1" orbital2="8.1" energy="-0.00001037"/>
+   <pair orbital1="-13.1" orbital2="-8.1" energy="-0.00001037"/>
+   <pair orbital1="13.1" orbital2="-8.1" energy="-0.00001982"/>
+   <pair orbital1="-13.1" orbital2="8.1" energy="-0.00001982"/>
+   <pair orbital1="13.1" orbital2="9.1" energy="-0.00001052"/>
+   <pair orbital1="-13.1" orbital2="-9.1" energy="-0.00001052"/>
+   <pair orbital1="13.1" orbital2="-9.1" energy="-0.00001561"/>
+   <pair orbital1="-13.1" orbital2="9.1" energy="-0.00001561"/>
+   <pair orbital1="13.1" orbital2="10.1" energy="-0.00001003"/>
+   <pair orbital1="-13.1" orbital2="-10.1" energy="-0.00001003"/>
+   <pair orbital1="13.1" orbital2="-10.1" energy="-0.00001535"/>
+   <pair orbital1="-13.1" orbital2="10.1" energy="-0.00001535"/>
+   <pair orbital1="13.1" orbital2="11.1" energy="-0.00016317"/>
+   <pair orbital1="-13.1" orbital2="-11.1" energy="-0.00016317"/>
+   <pair orbital1="13.1" orbital2="-11.1" energy="-0.00153371"/>
+   <pair orbital1="-13.1" orbital2="11.1" energy="-0.00153371"/>
+   <pair orbital1="13.1" orbital2="12.1" energy="-0.00016895"/>
+   <pair orbital1="-13.1" orbital2="-12.1" energy="-0.00016895"/>
+   <pair orbital1="13.1" orbital2="-12.1" energy="-0.00136912"/>
+   <pair orbital1="-13.1" orbital2="12.1" energy="-0.00136912"/>
+   <pair orbital1="13.1" orbital2="-13.1" energy="-0.00235465"/>
+   <pair orbital1="-13.1" orbital2="13.1" energy="-0.00235465"/>
+   <pair orbital1="14.1" orbital2="2.1" energy="-0.00001894"/>
+   <pair orbital1="-14.1" orbital2="-2.1" energy="-0.00001894"/>
+   <pair orbital1="14.1" orbital2="-2.1" energy="-0.00005406"/>
+   <pair orbital1="-14.1" orbital2="2.1" energy="-0.00005406"/>
+   <pair orbital1="14.1" orbital2="3.1" energy="-0.00002717"/>
+   <pair orbital1="-14.1" orbital2="-3.1" energy="-0.00002717"/>
+   <pair orbital1="14.1" orbital2="-3.1" energy="-0.00004972"/>
+   <pair orbital1="-14.1" orbital2="3.1" energy="-0.00004972"/>
+   <pair orbital1="14.1" orbital2="4.1" energy="-0.00008491"/>
+   <pair orbital1="-14.1" orbital2="-4.1" energy="-0.00008491"/>
+   <pair orbital1="14.1" orbital2="-4.1" energy="-0.00019748"/>
+   <pair orbital1="-14.1" orbital2="4.1" energy="-0.00019748"/>
+   <pair orbital1="14.1" orbital2="5.1" energy="-0.00002658"/>
+   <pair orbital1="-14.1" orbital2="-5.1" energy="-0.00002658"/>
+   <pair orbital1="14.1" orbital2="-5.1" energy="-0.00002773"/>
+   <pair orbital1="-14.1" orbital2="5.1" energy="-0.00002773"/>
+   <pair orbital1="14.1" orbital2="6.1" energy="-0.00003043"/>
+   <pair orbital1="-14.1" orbital2="-6.1" energy="-0.00003043"/>
+   <pair orbital1="14.1" orbital2="-6.1" energy="-0.00016836"/>
+   <pair orbital1="-14.1" orbital2="6.1" energy="-0.00016836"/>
+   <pair orbital1="14.1" orbital2="7.1" energy="-0.00001852"/>
+   <pair orbital1="-14.1" orbital2="-7.1" energy="-0.00001852"/>
+   <pair orbital1="14.1" orbital2="-7.1" energy="-0.00009983"/>
+   <pair orbital1="-14.1" orbital2="7.1" energy="-0.00009983"/>
+   <pair orbital1="14.1" orbital2="8.1" energy="-0.00009744"/>
+   <pair orbital1="-14.1" orbital2="-8.1" energy="-0.00009744"/>
+   <pair orbital1="14.1" orbital2="-8.1" energy="-0.00017435"/>
+   <pair orbital1="-14.1" orbital2="8.1" energy="-0.00017435"/>
+   <pair orbital1="14.1" orbital2="9.1" energy="-0.00009542"/>
+   <pair orbital1="-14.1" orbital2="-9.1" energy="-0.00009542"/>
+   <pair orbital1="14.1" orbital2="-9.1" energy="-0.00014471"/>
+   <pair orbital1="-14.1" orbital2="9.1" energy="-0.00014471"/>
+   <pair orbital1="14.1" orbital2="10.1" energy="-0.00009018"/>
+   <pair orbital1="-14.1" orbital2="-10.1" energy="-0.00009018"/>
+   <pair orbital1="14.1" orbital2="-10.1" energy="-0.00014109"/>
+   <pair orbital1="-14.1" orbital2="10.1" energy="-0.00014109"/>
+   <pair orbital1="14.1" orbital2="11.1" energy="-0.0002252"/>
+   <pair orbital1="-14.1" orbital2="-11.1" energy="-0.0002252"/>
+   <pair orbital1="14.1" orbital2="-11.1" energy="-0.00123075"/>
+   <pair orbital1="-14.1" orbital2="11.1" energy="-0.00123075"/>
+   <pair orbital1="14.1" orbital2="12.1" energy="-0.00023389"/>
+   <pair orbital1="-14.1" orbital2="-12.1" energy="-0.00023389"/>
+   <pair orbital1="14.1" orbital2="-12.1" energy="-0.00120187"/>
+   <pair orbital1="-14.1" orbital2="12.1" energy="-0.00120187"/>
+   <pair orbital1="14.1" orbital2="13.1" energy="-0.00017115"/>
+   <pair orbital1="-14.1" orbital2="-13.1" energy="-0.00017115"/>
+   <pair orbital1="14.1" orbital2="-13.1" energy="-0.00212378"/>
+   <pair orbital1="-14.1" orbital2="13.1" energy="-0.00212378"/>
+   <pair orbital1="14.1" orbital2="-14.1" energy="-0.00268578"/>
+   <pair orbital1="-14.1" orbital2="14.1" energy="-0.00268578"/>
+   <pair orbital1="15.1" orbital2="2.1" energy="-0.00006941"/>
+   <pair orbital1="-15.1" orbital2="-2.1" energy="-0.00006941"/>
+   <pair orbital1="15.1" orbital2="-2.1" energy="-0.00009216"/>
+   <pair orbital1="-15.1" orbital2="2.1" energy="-0.00009216"/>
+   <pair orbital1="15.1" orbital2="3.1" energy="-0.00000636"/>
+   <pair orbital1="-15.1" orbital2="-3.1" energy="-0.00000636"/>
+   <pair orbital1="15.1" orbital2="-3.1" energy="-0.00001222"/>
+   <pair orbital1="-15.1" orbital2="3.1" energy="-0.00001222"/>
+   <pair orbital1="15.1" orbital2="4.1" energy="-0.00002596"/>
+   <pair orbital1="-15.1" orbital2="-4.1" energy="-0.00002596"/>
+   <pair orbital1="15.1" orbital2="-4.1" energy="-0.0000289"/>
+   <pair orbital1="-15.1" orbital2="4.1" energy="-0.0000289"/>
+   <pair orbital1="15.1" orbital2="5.1" energy="-0.00007884"/>
+   <pair orbital1="-15.1" orbital2="-5.1" energy="-0.00007884"/>
+   <pair orbital1="15.1" orbital2="-5.1" energy="-0.00028788"/>
+   <pair orbital1="-15.1" orbital2="5.1" energy="-0.00028788"/>
+   <pair orbital1="15.1" orbital2="6.1" energy="-0.00005931"/>
+   <pair orbital1="-15.1" orbital2="-6.1" energy="-0.00005931"/>
+   <pair orbital1="15.1" orbital2="-6.1" energy="-0.00021139"/>
+   <pair orbital1="-15.1" orbital2="6.1" energy="-0.00021139"/>
+   <pair orbital1="15.1" orbital2="7.1" energy="-0.00000413"/>
+   <pair orbital1="-15.1" orbital2="-7.1" energy="-0.00000413"/>
+   <pair orbital1="15.1" orbital2="-7.1" energy="-0.00002533"/>
+   <pair orbital1="-15.1" orbital2="7.1" energy="-0.00002533"/>
+   <pair orbital1="15.1" orbital2="8.1" energy="-0.00002651"/>
+   <pair orbital1="-15.1" orbital2="-8.1" energy="-0.00002651"/>
+   <pair orbital1="15.1" orbital2="-8.1" energy="-0.00004367"/>
+   <pair orbital1="-15.1" orbital2="8.1" energy="-0.00004367"/>
+   <pair orbital1="15.1" orbital2="9.1" energy="-0.00002479"/>
+   <pair orbital1="-15.1" orbital2="-9.1" energy="-0.00002479"/>
+   <pair orbital1="15.1" orbital2="-9.1" energy="-0.00003802"/>
+   <pair orbital1="-15.1" orbital2="9.1" energy="-0.00003802"/>
+   <pair orbital1="15.1" orbital2="10.1" energy="-0.00002326"/>
+   <pair orbital1="-15.1" orbital2="-10.1" energy="-0.00002326"/>
+   <pair orbital1="15.1" orbital2="-10.1" energy="-0.00003702"/>
+   <pair orbital1="-15.1" orbital2="10.1" energy="-0.00003702"/>
+   <pair orbital1="15.1" orbital2="11.1" energy="-0.00022024"/>
+   <pair orbital1="-15.1" orbital2="-11.1" energy="-0.00022024"/>
+   <pair orbital1="15.1" orbital2="-11.1" energy="-0.00123527"/>
+   <pair orbital1="-15.1" orbital2="11.1" energy="-0.00123527"/>
+   <pair orbital1="15.1" orbital2="12.1" energy="-0.00019859"/>
+   <pair orbital1="-15.1" orbital2="-12.1" energy="-0.00019859"/>
+   <pair orbital1="15.1" orbital2="-12.1" energy="-0.00125896"/>
+   <pair orbital1="-15.1" orbital2="12.1" energy="-0.00125896"/>
+   <pair orbital1="15.1" orbital2="13.1" energy="-0.000292"/>
+   <pair orbital1="-15.1" orbital2="-13.1" energy="-0.000292"/>
+   <pair orbital1="15.1" orbital2="-13.1" energy="-0.00296173"/>
+   <pair orbital1="-15.1" orbital2="13.1" energy="-0.00296173"/>
+   <pair orbital1="15.1" orbital2="14.1" energy="-0.00018443"/>
+   <pair orbital1="-15.1" orbital2="-14.1" energy="-0.00018443"/>
+   <pair orbital1="15.1" orbital2="-14.1" energy="-0.00201827"/>
+   <pair orbital1="-15.1" orbital2="14.1" energy="-0.00201827"/>
+   <pair orbital1="15.1" orbital2="-15.1" energy="-0.00270806"/>
+   <pair orbital1="-15.1" orbital2="15.1" energy="-0.00270806"/>
+   <pair orbital1="16.1" orbital2="2.1" energy="-0.00016596"/>
+   <pair orbital1="-16.1" orbital2="-2.1" energy="-0.00016596"/>
+   <pair orbital1="16.1" orbital2="-2.1" energy="-0.00018466"/>
+   <pair orbital1="-16.1" orbital2="2.1" energy="-0.00018466"/>
+   <pair orbital1="16.1" orbital2="3.1" energy="-0.00014655"/>
+   <pair orbital1="-16.1" orbital2="-3.1" energy="-0.00014655"/>
+   <pair orbital1="16.1" orbital2="-3.1" energy="-0.0001653"/>
+   <pair orbital1="-16.1" orbital2="3.1" energy="-0.0001653"/>
+   <pair orbital1="16.1" orbital2="4.1" energy="-0.00011868"/>
+   <pair orbital1="-16.1" orbital2="-4.1" energy="-0.00011868"/>
+   <pair orbital1="16.1" orbital2="-4.1" energy="-0.00021408"/>
+   <pair orbital1="-16.1" orbital2="4.1" energy="-0.00021408"/>
+   <pair orbital1="16.1" orbital2="5.1" energy="-0.00001425"/>
+   <pair orbital1="-16.1" orbital2="-5.1" energy="-0.00001425"/>
+   <pair orbital1="16.1" orbital2="-5.1" energy="-0.00001496"/>
+   <pair orbital1="-16.1" orbital2="5.1" energy="-0.00001496"/>
+   <pair orbital1="16.1" orbital2="6.1" energy="-0.0000077"/>
+   <pair orbital1="-16.1" orbital2="-6.1" energy="-0.0000077"/>
+   <pair orbital1="16.1" orbital2="-6.1" energy="-0.00001871"/>
+   <pair orbital1="-16.1" orbital2="6.1" energy="-0.00001871"/>
+   <pair orbital1="16.1" orbital2="7.1" energy="-0.0000052"/>
+   <pair orbital1="-16.1" orbital2="-7.1" energy="-0.0000052"/>
+   <pair orbital1="16.1" orbital2="-7.1" energy="-0.00003415"/>
+   <pair orbital1="-16.1" orbital2="7.1" energy="-0.00003415"/>
+   <pair orbital1="16.1" orbital2="8.1" energy="-0.00003682"/>
+   <pair orbital1="-16.1" orbital2="-8.1" energy="-0.00003682"/>
+   <pair orbital1="16.1" orbital2="-8.1" energy="-0.00005803"/>
+   <pair orbital1="-16.1" orbital2="8.1" energy="-0.00005803"/>
+   <pair orbital1="16.1" orbital2="9.1" energy="-0.00003409"/>
+   <pair orbital1="-16.1" orbital2="-9.1" energy="-0.00003409"/>
+   <pair orbital1="16.1" orbital2="-9.1" energy="-0.00005215"/>
+   <pair orbital1="-16.1" orbital2="9.1" energy="-0.00005215"/>
+   <pair orbital1="16.1" orbital2="10.1" energy="-0.00003155"/>
+   <pair orbital1="-16.1" orbital2="-10.1" energy="-0.00003155"/>
+   <pair orbital1="16.1" orbital2="-10.1" energy="-0.00005094"/>
+   <pair orbital1="-16.1" orbital2="10.1" energy="-0.00005094"/>
+   <pair orbital1="16.1" orbital2="11.1" energy="-0.0005088"/>
+   <pair orbital1="-16.1" orbital2="-11.1" energy="-0.0005088"/>
+   <pair orbital1="16.1" orbital2="-11.1" energy="-0.00383103"/>
+   <pair orbital1="-16.1" orbital2="11.1" energy="-0.00383103"/>
+   <pair orbital1="16.1" orbital2="12.1" energy="-0.00081757"/>
+   <pair orbital1="-16.1" orbital2="-12.1" energy="-0.00081757"/>
+   <pair orbital1="16.1" orbital2="-12.1" energy="-0.00369124"/>
+   <pair orbital1="-16.1" orbital2="12.1" energy="-0.00369124"/>
+   <pair orbital1="16.1" orbital2="13.1" energy="-0.00041738"/>
+   <pair orbital1="-16.1" orbital2="-13.1" energy="-0.00041738"/>
+   <pair orbital1="16.1" orbital2="-13.1" energy="-0.00139268"/>
+   <pair orbital1="-16.1" orbital2="13.1" energy="-0.00139268"/>
+   <pair orbital1="16.1" orbital2="14.1" energy="-0.00043842"/>
+   <pair orbital1="-16.1" orbital2="-14.1" energy="-0.00043842"/>
+   <pair orbital1="16.1" orbital2="-14.1" energy="-0.00171664"/>
+   <pair orbital1="-16.1" orbital2="14.1" energy="-0.00171664"/>
+   <pair orbital1="16.1" orbital2="15.1" energy="-0.00040723"/>
+   <pair orbital1="-16.1" orbital2="-15.1" energy="-0.00040723"/>
+   <pair orbital1="16.1" orbital2="-15.1" energy="-0.00160352"/>
+   <pair orbital1="-16.1" orbital2="15.1" energy="-0.00160352"/>
+   <pair orbital1="16.1" orbital2="-16.1" energy="-0.0040425"/>
+   <pair orbital1="-16.1" orbital2="16.1" energy="-0.0040425"/>
+   <pair orbital1="17.1" orbital2="2.1" energy="-0.00005548"/>
+   <pair orbital1="-17.1" orbital2="-2.1" energy="-0.00005548"/>
+   <pair orbital1="17.1" orbital2="-2.1" energy="-0.00005852"/>
+   <pair orbital1="-17.1" orbital2="2.1" energy="-0.00005852"/>
+   <pair orbital1="17.1" orbital2="3.1" energy="-0.00031288"/>
+   <pair orbital1="-17.1" orbital2="-3.1" energy="-0.00031288"/>
+   <pair orbital1="17.1" orbital2="-3.1" energy="-0.0003239"/>
+   <pair orbital1="-17.1" orbital2="3.1" energy="-0.0003239"/>
+   <pair orbital1="17.1" orbital2="4.1" energy="-0.00012726"/>
+   <pair orbital1="-17.1" orbital2="-4.1" energy="-0.00012726"/>
+   <pair orbital1="17.1" orbital2="-4.1" energy="-0.00013749"/>
+   <pair orbital1="-17.1" orbital2="4.1" energy="-0.00013749"/>
+   <pair orbital1="17.1" orbital2="5.1" energy="-0.00002952"/>
+   <pair orbital1="-17.1" orbital2="-5.1" energy="-0.00002952"/>
+   <pair orbital1="17.1" orbital2="-5.1" energy="-0.00003065"/>
+   <pair orbital1="-17.1" orbital2="5.1" energy="-0.00003065"/>
+   <pair orbital1="17.1" orbital2="6.1" energy="-0.00000692"/>
+   <pair orbital1="-17.1" orbital2="-6.1" energy="-0.00000692"/>
+   <pair orbital1="17.1" orbital2="-6.1" energy="-0.00000824"/>
+   <pair orbital1="-17.1" orbital2="6.1" energy="-0.00000824"/>
+   <pair orbital1="17.1" orbital2="7.1" energy="-0.00000377"/>
+   <pair orbital1="-17.1" orbital2="-7.1" energy="-0.00000377"/>
+   <pair orbital1="17.1" orbital2="-7.1" energy="-0.00001793"/>
+   <pair orbital1="-17.1" orbital2="7.1" energy="-0.00001793"/>
+   <pair orbital1="17.1" orbital2="8.1" energy="-0.00002103"/>
+   <pair orbital1="-17.1" orbital2="-8.1" energy="-0.00002103"/>
+   <pair orbital1="17.1" orbital2="-8.1" energy="-0.00003084"/>
+   <pair orbital1="-17.1" orbital2="8.1" energy="-0.00003084"/>
+   <pair orbital1="17.1" orbital2="9.1" energy="-0.00001886"/>
+   <pair orbital1="-17.1" orbital2="-9.1" energy="-0.00001886"/>
+   <pair orbital1="17.1" orbital2="-9.1" energy="-0.00002769"/>
+   <pair orbital1="-17.1" orbital2="9.1" energy="-0.00002769"/>
+   <pair orbital1="17.1" orbital2="10.1" energy="-0.00001674"/>
+   <pair orbital1="-17.1" orbital2="-10.1" energy="-0.00001674"/>
+   <pair orbital1="17.1" orbital2="-10.1" energy="-0.00002808"/>
+   <pair orbital1="-17.1" orbital2="10.1" energy="-0.00002808"/>
+   <pair orbital1="17.1" orbital2="11.1" energy="-0.0006194"/>
+   <pair orbital1="-17.1" orbital2="-11.1" energy="-0.0006194"/>
+   <pair orbital1="17.1" orbital2="-11.1" energy="-0.00316654"/>
+   <pair orbital1="-17.1" orbital2="11.1" energy="-0.00316654"/>
+   <pair orbital1="17.1" orbital2="12.1" energy="-0.00080264"/>
+   <pair orbital1="-17.1" orbital2="-12.1" energy="-0.00080264"/>
+   <pair orbital1="17.1" orbital2="-12.1" energy="-0.00490039"/>
+   <pair orbital1="-17.1" orbital2="12.1" energy="-0.00490039"/>
+   <pair orbital1="17.1" orbital2="13.1" energy="-0.00026672"/>
+   <pair orbital1="-17.1" orbital2="-13.1" energy="-0.00026672"/>
+   <pair orbital1="17.1" orbital2="-13.1" energy="-0.00136753"/>
+   <pair orbital1="-17.1" orbital2="13.1" energy="-0.00136753"/>
+   <pair orbital1="17.1" orbital2="14.1" energy="-0.00047587"/>
+   <pair orbital1="-17.1" orbital2="-14.1" energy="-0.00047587"/>
+   <pair orbital1="17.1" orbital2="-14.1" energy="-0.00235312"/>
+   <pair orbital1="-17.1" orbital2="14.1" energy="-0.00235312"/>
+   <pair orbital1="17.1" orbital2="15.1" energy="-0.00033648"/>
+   <pair orbital1="-17.1" orbital2="-15.1" energy="-0.00033648"/>
+   <pair orbital1="17.1" orbital2="-15.1" energy="-0.00098506"/>
+   <pair orbital1="-17.1" orbital2="15.1" energy="-0.00098506"/>
+   <pair orbital1="17.1" orbital2="16.1" energy="-0.00162229"/>
+   <pair orbital1="-17.1" orbital2="-16.1" energy="-0.00162229"/>
+   <pair orbital1="17.1" orbital2="-16.1" energy="-0.00351782"/>
+   <pair orbital1="-17.1" orbital2="16.1" energy="-0.00351782"/>
+   <pair orbital1="17.1" orbital2="-17.1" energy="-0.00671244"/>
+   <pair orbital1="-17.1" orbital2="17.1" energy="-0.00671244"/>
+   <pair orbital1="18.1" orbital2="2.1" energy="-0.00013433"/>
+   <pair orbital1="-18.1" orbital2="-2.1" energy="-0.00013433"/>
+   <pair orbital1="18.1" orbital2="-2.1" energy="-0.00013816"/>
+   <pair orbital1="-18.1" orbital2="2.1" energy="-0.00013816"/>
+   <pair orbital1="18.1" orbital2="3.1" energy="-0.00016575"/>
+   <pair orbital1="-18.1" orbital2="-3.1" energy="-0.00016575"/>
+   <pair orbital1="18.1" orbital2="-3.1" energy="-0.00017191"/>
+   <pair orbital1="-18.1" orbital2="3.1" energy="-0.00017191"/>
+   <pair orbital1="18.1" orbital2="4.1" energy="-0.0000652"/>
+   <pair orbital1="-18.1" orbital2="-4.1" energy="-0.0000652"/>
+   <pair orbital1="18.1" orbital2="-4.1" energy="-0.00007325"/>
+   <pair orbital1="-18.1" orbital2="4.1" energy="-0.00007325"/>
+   <pair orbital1="18.1" orbital2="5.1" energy="-0.00012238"/>
+   <pair orbital1="-18.1" orbital2="-5.1" energy="-0.00012238"/>
+   <pair orbital1="18.1" orbital2="-5.1" energy="-0.00013388"/>
+   <pair orbital1="-18.1" orbital2="5.1" energy="-0.00013388"/>
+   <pair orbital1="18.1" orbital2="6.1" energy="-0.00004362"/>
+   <pair orbital1="-18.1" orbital2="-6.1" energy="-0.00004362"/>
+   <pair orbital1="18.1" orbital2="-6.1" energy="-0.00004544"/>
+   <pair orbital1="-18.1" orbital2="6.1" energy="-0.00004544"/>
+   <pair orbital1="18.1" orbital2="7.1" energy="-0.00000412"/>
+   <pair orbital1="-18.1" orbital2="-7.1" energy="-0.00000412"/>
+   <pair orbital1="18.1" orbital2="-7.1" energy="-0.00002176"/>
+   <pair orbital1="-18.1" orbital2="7.1" energy="-0.00002176"/>
+   <pair orbital1="18.1" orbital2="8.1" energy="-0.00002404"/>
+   <pair orbital1="-18.1" orbital2="-8.1" energy="-0.00002404"/>
+   <pair orbital1="18.1" orbital2="-8.1" energy="-0.00003758"/>
+   <pair orbital1="-18.1" orbital2="8.1" energy="-0.00003758"/>
+   <pair orbital1="18.1" orbital2="9.1" energy="-0.0000231"/>
+   <pair orbital1="-18.1" orbital2="-9.1" energy="-0.0000231"/>
+   <pair orbital1="18.1" orbital2="-9.1" energy="-0.00003429"/>
+   <pair orbital1="-18.1" orbital2="9.1" energy="-0.00003429"/>
+   <pair orbital1="18.1" orbital2="10.1" energy="-0.0000215"/>
+   <pair orbital1="-18.1" orbital2="-10.1" energy="-0.0000215"/>
+   <pair orbital1="18.1" orbital2="-10.1" energy="-0.00003352"/>
+   <pair orbital1="-18.1" orbital2="10.1" energy="-0.00003352"/>
+   <pair orbital1="18.1" orbital2="11.1" energy="-0.00052691"/>
+   <pair orbital1="-18.1" orbital2="-11.1" energy="-0.00052691"/>
+   <pair orbital1="18.1" orbital2="-11.1" energy="-0.00269569"/>
+   <pair orbital1="-18.1" orbital2="11.1" energy="-0.00269569"/>
+   <pair orbital1="18.1" orbital2="12.1" energy="-0.0006447"/>
+   <pair orbital1="-18.1" orbital2="-12.1" energy="-0.0006447"/>
+   <pair orbital1="18.1" orbital2="-12.1" energy="-0.00352504"/>
+   <pair orbital1="-18.1" orbital2="12.1" energy="-0.00352504"/>
+   <pair orbital1="18.1" orbital2="13.1" energy="-0.00042313"/>
+   <pair orbital1="-18.1" orbital2="-13.1" energy="-0.00042313"/>
+   <pair orbital1="18.1" orbital2="-13.1" energy="-0.00249765"/>
+   <pair orbital1="-18.1" orbital2="13.1" energy="-0.00249765"/>
+   <pair orbital1="18.1" orbital2="14.1" energy="-0.00048019"/>
+   <pair orbital1="-18.1" orbital2="-14.1" energy="-0.00048019"/>
+   <pair orbital1="18.1" orbital2="-14.1" energy="-0.0015808"/>
+   <pair orbital1="-18.1" orbital2="14.1" energy="-0.0015808"/>
+   <pair orbital1="18.1" orbital2="15.1" energy="-0.00059264"/>
+   <pair orbital1="-18.1" orbital2="-15.1" energy="-0.00059264"/>
+   <pair orbital1="18.1" orbital2="-15.1" energy="-0.00253093"/>
+   <pair orbital1="-18.1" orbital2="15.1" energy="-0.00253093"/>
+   <pair orbital1="18.1" orbital2="16.1" energy="-0.00102803"/>
+   <pair orbital1="-18.1" orbital2="-16.1" energy="-0.00102803"/>
+   <pair orbital1="18.1" orbital2="-16.1" energy="-0.00412727"/>
+   <pair orbital1="-18.1" orbital2="16.1" energy="-0.00412727"/>
+   <pair orbital1="18.1" orbital2="17.1" energy="-0.00128775"/>
+   <pair orbital1="-18.1" orbital2="-17.1" energy="-0.00128775"/>
+   <pair orbital1="18.1" orbital2="-17.1" energy="-0.00440806"/>
+   <pair orbital1="-18.1" orbital2="17.1" energy="-0.00440806"/>
+   <pair orbital1="18.1" orbital2="-18.1" energy="-0.00349089"/>
+   <pair orbital1="-18.1" orbital2="18.1" energy="-0.00349089"/>
+   <pair orbital1="19.1" orbital2="2.1" energy="-0.00008395"/>
+   <pair orbital1="-19.1" orbital2="-2.1" energy="-0.00008395"/>
+   <pair orbital1="19.1" orbital2="-2.1" energy="-0.00008989"/>
+   <pair orbital1="-19.1" orbital2="2.1" energy="-0.00008989"/>
+   <pair orbital1="19.1" orbital2="3.1" energy="-0.00002475"/>
+   <pair orbital1="-19.1" orbital2="-3.1" energy="-0.00002475"/>
+   <pair orbital1="19.1" orbital2="-3.1" energy="-0.00002585"/>
+   <pair orbital1="-19.1" orbital2="3.1" energy="-0.00002585"/>
+   <pair orbital1="19.1" orbital2="4.1" energy="-0.00002861"/>
+   <pair orbital1="-19.1" orbital2="-4.1" energy="-0.00002861"/>
+   <pair orbital1="19.1" orbital2="-4.1" energy="-0.00002991"/>
+   <pair orbital1="-19.1" orbital2="4.1" energy="-0.00002991"/>
+   <pair orbital1="19.1" orbital2="5.1" energy="-0.0002212"/>
+   <pair orbital1="-19.1" orbital2="-5.1" energy="-0.0002212"/>
+   <pair orbital1="19.1" orbital2="-5.1" energy="-0.00022756"/>
+   <pair orbital1="-19.1" orbital2="5.1" energy="-0.00022756"/>
+   <pair orbital1="19.1" orbital2="6.1" energy="-0.00008938"/>
+   <pair orbital1="-19.1" orbital2="-6.1" energy="-0.00008938"/>
+   <pair orbital1="19.1" orbital2="-6.1" energy="-0.00009228"/>
+   <pair orbital1="-19.1" orbital2="6.1" energy="-0.00009228"/>
+   <pair orbital1="19.1" orbital2="7.1" energy="-0.00000033"/>
+   <pair orbital1="-19.1" orbital2="-7.1" energy="-0.00000033"/>
+   <pair orbital1="19.1" orbital2="-7.1" energy="-0.00000049"/>
+   <pair orbital1="-19.1" orbital2="7.1" energy="-0.00000049"/>
+   <pair orbital1="19.1" orbital2="8.1" energy="-0.00000082"/>
+   <pair orbital1="-19.1" orbital2="-8.1" energy="-0.00000082"/>
+   <pair orbital1="19.1" orbital2="-8.1" energy="-0.00000089"/>
+   <pair orbital1="-19.1" orbital2="8.1" energy="-0.00000089"/>
+   <pair orbital1="19.1" orbital2="9.1" energy="-0.00000038"/>
+   <pair orbital1="-19.1" orbital2="-9.1" energy="-0.00000038"/>
+   <pair orbital1="19.1" orbital2="-9.1" energy="-0.00000095"/>
+   <pair orbital1="-19.1" orbital2="9.1" energy="-0.00000095"/>
+   <pair orbital1="19.1" orbital2="10.1" energy="-0.00000061"/>
+   <pair orbital1="-19.1" orbital2="-10.1" energy="-0.00000061"/>
+   <pair orbital1="19.1" orbital2="-10.1" energy="-0.00000068"/>
+   <pair orbital1="-19.1" orbital2="10.1" energy="-0.00000068"/>
+   <pair orbital1="19.1" orbital2="11.1" energy="-0.00036962"/>
+   <pair orbital1="-19.1" orbital2="-11.1" energy="-0.00036962"/>
+   <pair orbital1="19.1" orbital2="-11.1" energy="-0.00143309"/>
+   <pair orbital1="-19.1" orbital2="11.1" energy="-0.00143309"/>
+   <pair orbital1="19.1" orbital2="12.1" energy="-0.00039024"/>
+   <pair orbital1="-19.1" orbital2="-12.1" energy="-0.00039024"/>
+   <pair orbital1="19.1" orbital2="-12.1" energy="-0.00145632"/>
+   <pair orbital1="-19.1" orbital2="12.1" energy="-0.00145632"/>
+   <pair orbital1="19.1" orbital2="13.1" energy="-0.0007211"/>
+   <pair orbital1="-19.1" orbital2="-13.1" energy="-0.0007211"/>
+   <pair orbital1="19.1" orbital2="-13.1" energy="-0.00308927"/>
+   <pair orbital1="-19.1" orbital2="13.1" energy="-0.00308927"/>
+   <pair orbital1="19.1" orbital2="14.1" energy="-0.00040456"/>
+   <pair orbital1="-19.1" orbital2="-14.1" energy="-0.00040456"/>
+   <pair orbital1="19.1" orbital2="-14.1" energy="-0.00106298"/>
+   <pair orbital1="-19.1" orbital2="14.1" energy="-0.00106298"/>
+   <pair orbital1="19.1" orbital2="15.1" energy="-0.00091948"/>
+   <pair orbital1="-19.1" orbital2="-15.1" energy="-0.00091948"/>
+   <pair orbital1="19.1" orbital2="-15.1" energy="-0.00394115"/>
+   <pair orbital1="-19.1" orbital2="15.1" energy="-0.00394115"/>
+   <pair orbital1="19.1" orbital2="16.1" energy="-0.0007038"/>
+   <pair orbital1="-19.1" orbital2="-16.1" energy="-0.0007038"/>
+   <pair orbital1="19.1" orbital2="-16.1" energy="-0.00145005"/>
+   <pair orbital1="-19.1" orbital2="16.1" energy="-0.00145005"/>
+   <pair orbital1="19.1" orbital2="17.1" energy="-0.00064224"/>
+   <pair orbital1="-19.1" orbital2="-17.1" energy="-0.00064224"/>
+   <pair orbital1="19.1" orbital2="-17.1" energy="-0.0011008"/>
+   <pair orbital1="-19.1" orbital2="17.1" energy="-0.0011008"/>
+   <pair orbital1="19.1" orbital2="18.1" energy="-0.00117336"/>
+   <pair orbital1="-19.1" orbital2="-18.1" energy="-0.00117336"/>
+   <pair orbital1="19.1" orbital2="-18.1" energy="-0.00275923"/>
+   <pair orbital1="-19.1" orbital2="18.1" energy="-0.00275923"/>
+   <pair orbital1="19.1" orbital2="-19.1" energy="-0.00390668"/>
+   <pair orbital1="-19.1" orbital2="19.1" energy="-0.00390668"/>
+   <pair orbital1="20.1" orbital2="2.1" energy="-0.00024597"/>
+   <pair orbital1="-20.1" orbital2="-2.1" energy="-0.00024597"/>
+   <pair orbital1="20.1" orbital2="-2.1" energy="-0.00026042"/>
+   <pair orbital1="-20.1" orbital2="2.1" energy="-0.00026042"/>
+   <pair orbital1="20.1" orbital2="3.1" energy="-0.00011999"/>
+   <pair orbital1="-20.1" orbital2="-3.1" energy="-0.00011999"/>
+   <pair orbital1="20.1" orbital2="-3.1" energy="-0.00012545"/>
+   <pair orbital1="-20.1" orbital2="3.1" energy="-0.00012545"/>
+   <pair orbital1="20.1" orbital2="4.1" energy="-0.00005105"/>
+   <pair orbital1="-20.1" orbital2="-4.1" energy="-0.00005105"/>
+   <pair orbital1="20.1" orbital2="-4.1" energy="-0.00005613"/>
+   <pair orbital1="-20.1" orbital2="4.1" energy="-0.00005613"/>
+   <pair orbital1="20.1" orbital2="5.1" energy="-0.00010926"/>
+   <pair orbital1="-20.1" orbital2="-5.1" energy="-0.00010926"/>
+   <pair orbital1="20.1" orbital2="-5.1" energy="-0.00011473"/>
+   <pair orbital1="-20.1" orbital2="5.1" energy="-0.00011473"/>
+   <pair orbital1="20.1" orbital2="6.1" energy="-0.00004802"/>
+   <pair orbital1="-20.1" orbital2="-6.1" energy="-0.00004802"/>
+   <pair orbital1="20.1" orbital2="-6.1" energy="-0.00005233"/>
+   <pair orbital1="-20.1" orbital2="6.1" energy="-0.00005233"/>
+   <pair orbital1="20.1" orbital2="7.1" energy="-0.00000143"/>
+   <pair orbital1="-20.1" orbital2="-7.1" energy="-0.00000143"/>
+   <pair orbital1="20.1" orbital2="-7.1" energy="-0.00000604"/>
+   <pair orbital1="-20.1" orbital2="7.1" energy="-0.00000604"/>
+   <pair orbital1="20.1" orbital2="8.1" energy="-0.00000655"/>
+   <pair orbital1="-20.1" orbital2="-8.1" energy="-0.00000655"/>
+   <pair orbital1="20.1" orbital2="-8.1" energy="-0.00001069"/>
+   <pair orbital1="-20.1" orbital2="8.1" energy="-0.00001069"/>
+   <pair orbital1="20.1" orbital2="9.1" energy="-0.00000662"/>
+   <pair orbital1="-20.1" orbital2="-9.1" energy="-0.00000662"/>
+   <pair orbital1="20.1" orbital2="-9.1" energy="-0.00000953"/>
+   <pair orbital1="-20.1" orbital2="9.1" energy="-0.00000953"/>
+   <pair orbital1="20.1" orbital2="10.1" energy="-0.00000635"/>
+   <pair orbital1="-20.1" orbital2="-10.1" energy="-0.00000635"/>
+   <pair orbital1="20.1" orbital2="-10.1" energy="-0.00000933"/>
+   <pair orbital1="-20.1" orbital2="10.1" energy="-0.00000933"/>
+   <pair orbital1="20.1" orbital2="11.1" energy="-0.00063275"/>
+   <pair orbital1="-20.1" orbital2="-11.1" energy="-0.00063275"/>
+   <pair orbital1="20.1" orbital2="-11.1" energy="-0.00351594"/>
+   <pair orbital1="-20.1" orbital2="11.1" energy="-0.00351594"/>
+   <pair orbital1="20.1" orbital2="12.1" energy="-0.00071221"/>
+   <pair orbital1="-20.1" orbital2="-12.1" energy="-0.00071221"/>
+   <pair orbital1="20.1" orbital2="-12.1" energy="-0.00387707"/>
+   <pair orbital1="-20.1" orbital2="12.1" energy="-0.00387707"/>
+   <pair orbital1="20.1" orbital2="13.1" energy="-0.00063439"/>
+   <pair orbital1="-20.1" orbital2="-13.1" energy="-0.00063439"/>
+   <pair orbital1="20.1" orbital2="-13.1" energy="-0.0021113"/>
+   <pair orbital1="-20.1" orbital2="13.1" energy="-0.0021113"/>
+   <pair orbital1="20.1" orbital2="14.1" energy="-0.00040786"/>
+   <pair orbital1="-20.1" orbital2="-14.1" energy="-0.00040786"/>
+   <pair orbital1="20.1" orbital2="-14.1" energy="-0.0014264"/>
+   <pair orbital1="-20.1" orbital2="14.1" energy="-0.0014264"/>
+   <pair orbital1="20.1" orbital2="15.1" energy="-0.00064543"/>
+   <pair orbital1="-20.1" orbital2="-15.1" energy="-0.00064543"/>
+   <pair orbital1="20.1" orbital2="-15.1" energy="-0.00319346"/>
+   <pair orbital1="-20.1" orbital2="15.1" energy="-0.00319346"/>
+   <pair orbital1="20.1" orbital2="16.1" energy="-0.0009783"/>
+   <pair orbital1="-20.1" orbital2="-16.1" energy="-0.0009783"/>
+   <pair orbital1="20.1" orbital2="-16.1" energy="-0.00581737"/>
+   <pair orbital1="-20.1" orbital2="16.1" energy="-0.00581737"/>
+   <pair orbital1="20.1" orbital2="17.1" energy="-0.00145671"/>
+   <pair orbital1="-20.1" orbital2="-17.1" energy="-0.00145671"/>
+   <pair orbital1="20.1" orbital2="-17.1" energy="-0.00281397"/>
+   <pair orbital1="-20.1" orbital2="17.1" energy="-0.00281397"/>
+   <pair orbital1="20.1" orbital2="18.1" energy="-0.00111018"/>
+   <pair orbital1="-20.1" orbital2="-18.1" energy="-0.00111018"/>
+   <pair orbital1="20.1" orbital2="-18.1" energy="-0.0047083"/>
+   <pair orbital1="-20.1" orbital2="18.1" energy="-0.0047083"/>
+   <pair orbital1="20.1" orbital2="19.1" energy="-0.00131288"/>
+   <pair orbital1="-20.1" orbital2="-19.1" energy="-0.00131288"/>
+   <pair orbital1="20.1" orbital2="-19.1" energy="-0.00261772"/>
+   <pair orbital1="-20.1" orbital2="19.1" energy="-0.00261772"/>
+   <pair orbital1="20.1" orbital2="-20.1" energy="-0.00482905"/>
+   <pair orbital1="-20.1" orbital2="20.1" energy="-0.00482905"/>
+   <pair orbital1="21.1" orbital2="2.1" energy="-0.00009219"/>
+   <pair orbital1="-21.1" orbital2="-2.1" energy="-0.00009219"/>
+   <pair orbital1="21.1" orbital2="-2.1" energy="-0.00009774"/>
+   <pair orbital1="-21.1" orbital2="2.1" energy="-0.00009774"/>
+   <pair orbital1="21.1" orbital2="3.1" energy="-0.00010967"/>
+   <pair orbital1="-21.1" orbital2="-3.1" energy="-0.00010967"/>
+   <pair orbital1="21.1" orbital2="-3.1" energy="-0.00011743"/>
+   <pair orbital1="-21.1" orbital2="3.1" energy="-0.00011743"/>
+   <pair orbital1="21.1" orbital2="4.1" energy="-0.00011364"/>
+   <pair orbital1="-21.1" orbital2="-4.1" energy="-0.00011364"/>
+   <pair orbital1="21.1" orbital2="-4.1" energy="-0.00011857"/>
+   <pair orbital1="-21.1" orbital2="4.1" energy="-0.00011857"/>
+   <pair orbital1="21.1" orbital2="5.1" energy="-0.00000516"/>
+   <pair orbital1="-21.1" orbital2="-5.1" energy="-0.00000516"/>
+   <pair orbital1="21.1" orbital2="-5.1" energy="-0.00000527"/>
+   <pair orbital1="-21.1" orbital2="5.1" energy="-0.00000527"/>
+   <pair orbital1="21.1" orbital2="6.1" energy="-0.00016972"/>
+   <pair orbital1="-21.1" orbital2="-6.1" energy="-0.00016972"/>
+   <pair orbital1="21.1" orbital2="-6.1" energy="-0.00017442"/>
+   <pair orbital1="-21.1" orbital2="6.1" energy="-0.00017442"/>
+   <pair orbital1="21.1" orbital2="7.1" energy="-0.0000031"/>
+   <pair orbital1="-21.1" orbital2="-7.1" energy="-0.0000031"/>
+   <pair orbital1="21.1" orbital2="-7.1" energy="-0.00000529"/>
+   <pair orbital1="-21.1" orbital2="7.1" energy="-0.00000529"/>
+   <pair orbital1="21.1" orbital2="8.1" energy="-0.00000779"/>
+   <pair orbital1="-21.1" orbital2="-8.1" energy="-0.00000779"/>
+   <pair orbital1="21.1" orbital2="-8.1" energy="-0.00000888"/>
+   <pair orbital1="-21.1" orbital2="8.1" energy="-0.00000888"/>
+   <pair orbital1="21.1" orbital2="9.1" energy="-0.00000316"/>
+   <pair orbital1="-21.1" orbital2="-9.1" energy="-0.00000316"/>
+   <pair orbital1="21.1" orbital2="-9.1" energy="-0.00001038"/>
+   <pair orbital1="-21.1" orbital2="9.1" energy="-0.00001038"/>
+   <pair orbital1="21.1" orbital2="10.1" energy="-0.0000064"/>
+   <pair orbital1="-21.1" orbital2="-10.1" energy="-0.0000064"/>
+   <pair orbital1="21.1" orbital2="-10.1" energy="-0.0000072"/>
+   <pair orbital1="-21.1" orbital2="10.1" energy="-0.0000072"/>
+   <pair orbital1="21.1" orbital2="11.1" energy="-0.00057173"/>
+   <pair orbital1="-21.1" orbital2="-11.1" energy="-0.00057173"/>
+   <pair orbital1="21.1" orbital2="-11.1" energy="-0.00228634"/>
+   <pair orbital1="-21.1" orbital2="11.1" energy="-0.00228634"/>
+   <pair orbital1="21.1" orbital2="12.1" energy="-0.00062835"/>
+   <pair orbital1="-21.1" orbital2="-12.1" energy="-0.00062835"/>
+   <pair orbital1="21.1" orbital2="-12.1" energy="-0.002022"/>
+   <pair orbital1="-21.1" orbital2="12.1" energy="-0.002022"/>
+   <pair orbital1="21.1" orbital2="13.1" energy="-0.0006441"/>
+   <pair orbital1="-21.1" orbital2="-13.1" energy="-0.0006441"/>
+   <pair orbital1="21.1" orbital2="-13.1" energy="-0.00232669"/>
+   <pair orbital1="-21.1" orbital2="13.1" energy="-0.00232669"/>
+   <pair orbital1="21.1" orbital2="14.1" energy="-0.00068078"/>
+   <pair orbital1="-21.1" orbital2="-14.1" energy="-0.00068078"/>
+   <pair orbital1="21.1" orbital2="-14.1" energy="-0.00214293"/>
+   <pair orbital1="-21.1" orbital2="14.1" energy="-0.00214293"/>
+   <pair orbital1="21.1" orbital2="15.1" energy="-0.00066528"/>
+   <pair orbital1="-21.1" orbital2="-15.1" energy="-0.00066528"/>
+   <pair orbital1="21.1" orbital2="-15.1" energy="-0.00225207"/>
+   <pair orbital1="-21.1" orbital2="15.1" energy="-0.00225207"/>
+   <pair orbital1="21.1" orbital2="16.1" energy="-0.0014566"/>
+   <pair orbital1="-21.1" orbital2="-16.1" energy="-0.0014566"/>
+   <pair orbital1="21.1" orbital2="-16.1" energy="-0.00245664"/>
+   <pair orbital1="-21.1" orbital2="16.1" energy="-0.00245664"/>
+   <pair orbital1="21.1" orbital2="17.1" energy="-0.00161841"/>
+   <pair orbital1="-21.1" orbital2="-17.1" energy="-0.00161841"/>
+   <pair orbital1="21.1" orbital2="-17.1" energy="-0.0022999"/>
+   <pair orbital1="-21.1" orbital2="17.1" energy="-0.0022999"/>
+   <pair orbital1="21.1" orbital2="18.1" energy="-0.00133226"/>
+   <pair orbital1="-21.1" orbital2="-18.1" energy="-0.00133226"/>
+   <pair orbital1="21.1" orbital2="-18.1" energy="-0.00210468"/>
+   <pair orbital1="-21.1" orbital2="18.1" energy="-0.00210468"/>
+   <pair orbital1="21.1" orbital2="19.1" energy="-0.00028326"/>
+   <pair orbital1="-21.1" orbital2="-19.1" energy="-0.00028326"/>
+   <pair orbital1="21.1" orbital2="-19.1" energy="-0.00333095"/>
+   <pair orbital1="-21.1" orbital2="19.1" energy="-0.00333095"/>
+   <pair orbital1="21.1" orbital2="20.1" energy="-0.00139566"/>
+   <pair orbital1="-21.1" orbital2="-20.1" energy="-0.00139566"/>
+   <pair orbital1="21.1" orbital2="-20.1" energy="-0.0023049"/>
+   <pair orbital1="-21.1" orbital2="20.1" energy="-0.0023049"/>
+   <pair orbital1="21.1" orbital2="-21.1" energy="-0.00385052"/>
+   <pair orbital1="-21.1" orbital2="21.1" energy="-0.00385052"/>
+   <pair orbital1="22.1" orbital2="2.1" energy="-0.000037"/>
+   <pair orbital1="-22.1" orbital2="-2.1" energy="-0.000037"/>
+   <pair orbital1="22.1" orbital2="-2.1" energy="-0.00004961"/>
+   <pair orbital1="-22.1" orbital2="2.1" energy="-0.00004961"/>
+   <pair orbital1="22.1" orbital2="3.1" energy="-0.00000734"/>
+   <pair orbital1="-22.1" orbital2="-3.1" energy="-0.00000734"/>
+   <pair orbital1="22.1" orbital2="-3.1" energy="-0.00000775"/>
+   <pair orbital1="-22.1" orbital2="3.1" energy="-0.00000775"/>
+   <pair orbital1="22.1" orbital2="4.1" energy="-0.00002834"/>
+   <pair orbital1="-22.1" orbital2="-4.1" energy="-0.00002834"/>
+   <pair orbital1="22.1" orbital2="-4.1" energy="-0.00004779"/>
+   <pair orbital1="-22.1" orbital2="4.1" energy="-0.00004779"/>
+   <pair orbital1="22.1" orbital2="5.1" energy="-0.00006005"/>
+   <pair orbital1="-22.1" orbital2="-5.1" energy="-0.00006005"/>
+   <pair orbital1="22.1" orbital2="-5.1" energy="-0.00006967"/>
+   <pair orbital1="-22.1" orbital2="5.1" energy="-0.00006967"/>
+   <pair orbital1="22.1" orbital2="6.1" energy="-0.0003326"/>
+   <pair orbital1="-22.1" orbital2="-6.1" energy="-0.0003326"/>
+   <pair orbital1="22.1" orbital2="-6.1" energy="-0.00034188"/>
+   <pair orbital1="-22.1" orbital2="6.1" energy="-0.00034188"/>
+   <pair orbital1="22.1" orbital2="7.1" energy="-0.00000471"/>
+   <pair orbital1="-22.1" orbital2="-7.1" energy="-0.00000471"/>
+   <pair orbital1="22.1" orbital2="-7.1" energy="-0.00001351"/>
+   <pair orbital1="-22.1" orbital2="7.1" energy="-0.00001351"/>
+   <pair orbital1="22.1" orbital2="8.1" energy="-0.00001183"/>
+   <pair orbital1="-22.1" orbital2="-8.1" energy="-0.00001183"/>
+   <pair orbital1="22.1" orbital2="-8.1" energy="-0.00002494"/>
+   <pair orbital1="-22.1" orbital2="8.1" energy="-0.00002494"/>
+   <pair orbital1="22.1" orbital2="9.1" energy="-0.00001557"/>
+   <pair orbital1="-22.1" orbital2="-9.1" energy="-0.00001557"/>
+   <pair orbital1="22.1" orbital2="-9.1" energy="-0.00002044"/>
+   <pair orbital1="-22.1" orbital2="9.1" energy="-0.00002044"/>
+   <pair orbital1="22.1" orbital2="10.1" energy="-0.00001438"/>
+   <pair orbital1="-22.1" orbital2="-10.1" energy="-0.00001438"/>
+   <pair orbital1="22.1" orbital2="-10.1" energy="-0.00002037"/>
+   <pair orbital1="-22.1" orbital2="10.1" energy="-0.00002037"/>
+   <pair orbital1="22.1" orbital2="11.1" energy="-0.00015665"/>
+   <pair orbital1="-22.1" orbital2="-11.1" energy="-0.00015665"/>
+   <pair orbital1="22.1" orbital2="-11.1" energy="-0.00067606"/>
+   <pair orbital1="-22.1" orbital2="11.1" energy="-0.00067606"/>
+   <pair orbital1="22.1" orbital2="12.1" energy="-0.00017282"/>
+   <pair orbital1="-22.1" orbital2="-12.1" energy="-0.00017282"/>
+   <pair orbital1="22.1" orbital2="-12.1" energy="-0.00074588"/>
+   <pair orbital1="-22.1" orbital2="12.1" energy="-0.00074588"/>
+   <pair orbital1="22.1" orbital2="13.1" energy="-0.0006907"/>
+   <pair orbital1="-22.1" orbital2="-13.1" energy="-0.0006907"/>
+   <pair orbital1="22.1" orbital2="-13.1" energy="-0.00386553"/>
+   <pair orbital1="-22.1" orbital2="13.1" energy="-0.00386553"/>
+   <pair orbital1="22.1" orbital2="14.1" energy="-0.00046307"/>
+   <pair orbital1="-22.1" orbital2="-14.1" energy="-0.00046307"/>
+   <pair orbital1="22.1" orbital2="-14.1" energy="-0.00261099"/>
+   <pair orbital1="-22.1" orbital2="14.1" energy="-0.00261099"/>
+   <pair orbital1="22.1" orbital2="15.1" energy="-0.00084273"/>
+   <pair orbital1="-22.1" orbital2="-15.1" energy="-0.00084273"/>
+   <pair orbital1="22.1" orbital2="-15.1" energy="-0.00339734"/>
+   <pair orbital1="-22.1" orbital2="15.1" energy="-0.00339734"/>
+   <pair orbital1="22.1" orbital2="16.1" energy="-0.00036892"/>
+   <pair orbital1="-22.1" orbital2="-16.1" energy="-0.00036892"/>
+   <pair orbital1="22.1" orbital2="-16.1" energy="-0.00126229"/>
+   <pair orbital1="-22.1" orbital2="16.1" energy="-0.00126229"/>
+   <pair orbital1="22.1" orbital2="17.1" energy="-0.00020078"/>
+   <pair orbital1="-22.1" orbital2="-17.1" energy="-0.00020078"/>
+   <pair orbital1="22.1" orbital2="-17.1" energy="-0.00097382"/>
+   <pair orbital1="-22.1" orbital2="17.1" energy="-0.00097382"/>
+   <pair orbital1="22.1" orbital2="18.1" energy="-0.00060432"/>
+   <pair orbital1="-22.1" orbital2="-18.1" energy="-0.00060432"/>
+   <pair orbital1="22.1" orbital2="-18.1" energy="-0.0023222"/>
+   <pair orbital1="-22.1" orbital2="18.1" energy="-0.0023222"/>
+   <pair orbital1="22.1" orbital2="19.1" energy="-0.00131183"/>
+   <pair orbital1="-22.1" orbital2="-19.1" energy="-0.00131183"/>
+   <pair orbital1="22.1" orbital2="-19.1" energy="-0.00204283"/>
+   <pair orbital1="-22.1" orbital2="19.1" energy="-0.00204283"/>
+   <pair orbital1="22.1" orbital2="20.1" energy="-0.00090795"/>
+   <pair orbital1="-22.1" orbital2="-20.1" energy="-0.00090795"/>
+   <pair orbital1="22.1" orbital2="-20.1" energy="-0.00169928"/>
+   <pair orbital1="-22.1" orbital2="20.1" energy="-0.00169928"/>
+   <pair orbital1="22.1" orbital2="21.1" energy="-0.00184289"/>
+   <pair orbital1="-22.1" orbital2="-21.1" energy="-0.00184289"/>
+   <pair orbital1="22.1" orbital2="-21.1" energy="-0.00291037"/>
+   <pair orbital1="-22.1" orbital2="21.1" energy="-0.00291037"/>
+   <pair orbital1="22.1" orbital2="-22.1" energy="-0.0086744"/>
+   <pair orbital1="-22.1" orbital2="22.1" energy="-0.0086744"/>
+   <pair orbital1="23.1" orbital2="2.1" energy="-0.00002583"/>
+   <pair orbital1="-23.1" orbital2="-2.1" energy="-0.00002583"/>
+   <pair orbital1="23.1" orbital2="-2.1" energy="-0.0000269"/>
+   <pair orbital1="-23.1" orbital2="2.1" energy="-0.0000269"/>
+   <pair orbital1="23.1" orbital2="3.1" energy="-0.00000731"/>
+   <pair orbital1="-23.1" orbital2="-3.1" energy="-0.00000731"/>
+   <pair orbital1="23.1" orbital2="-3.1" energy="-0.0000076"/>
+   <pair orbital1="-23.1" orbital2="3.1" energy="-0.0000076"/>
+   <pair orbital1="23.1" orbital2="4.1" energy="-0.00001166"/>
+   <pair orbital1="-23.1" orbital2="-4.1" energy="-0.00001166"/>
+   <pair orbital1="23.1" orbital2="-4.1" energy="-0.00001318"/>
+   <pair orbital1="-23.1" orbital2="4.1" energy="-0.00001318"/>
+   <pair orbital1="23.1" orbital2="5.1" energy="-0.00027409"/>
+   <pair orbital1="-23.1" orbital2="-5.1" energy="-0.00027409"/>
+   <pair orbital1="23.1" orbital2="-5.1" energy="-0.00028224"/>
+   <pair orbital1="-23.1" orbital2="5.1" energy="-0.00028224"/>
+   <pair orbital1="23.1" orbital2="6.1" energy="-0.00027388"/>
+   <pair orbital1="-23.1" orbital2="-6.1" energy="-0.00027388"/>
+   <pair orbital1="23.1" orbital2="-6.1" energy="-0.00028405"/>
+   <pair orbital1="-23.1" orbital2="6.1" energy="-0.00028405"/>
+   <pair orbital1="23.1" orbital2="7.1" energy="-0.0000002"/>
+   <pair orbital1="-23.1" orbital2="-7.1" energy="-0.0000002"/>
+   <pair orbital1="23.1" orbital2="-7.1" energy="-0.00000049"/>
+   <pair orbital1="-23.1" orbital2="7.1" energy="-0.00000049"/>
+   <pair orbital1="23.1" orbital2="8.1" energy="-0.00000058"/>
+   <pair orbital1="-23.1" orbital2="-8.1" energy="-0.00000058"/>
+   <pair orbital1="23.1" orbital2="-8.1" energy="-0.00000092"/>
+   <pair orbital1="-23.1" orbital2="8.1" energy="-0.00000092"/>
+   <pair orbital1="23.1" orbital2="9.1" energy="-0.00000057"/>
+   <pair orbital1="-23.1" orbital2="-9.1" energy="-0.00000057"/>
+   <pair orbital1="23.1" orbital2="-9.1" energy="-0.00000077"/>
+   <pair orbital1="-23.1" orbital2="9.1" energy="-0.00000077"/>
+   <pair orbital1="23.1" orbital2="10.1" energy="-0.00000053"/>
+   <pair orbital1="-23.1" orbital2="-10.1" energy="-0.00000053"/>
+   <pair orbital1="23.1" orbital2="-10.1" energy="-0.00000078"/>
+   <pair orbital1="-23.1" orbital2="10.1" energy="-0.00000078"/>
+   <pair orbital1="23.1" orbital2="11.1" energy="-0.00020682"/>
+   <pair orbital1="-23.1" orbital2="-11.1" energy="-0.00020682"/>
+   <pair orbital1="23.1" orbital2="-11.1" energy="-0.00073688"/>
+   <pair orbital1="-23.1" orbital2="11.1" energy="-0.00073688"/>
+   <pair orbital1="23.1" orbital2="12.1" energy="-0.00026283"/>
+   <pair orbital1="-23.1" orbital2="-12.1" energy="-0.00026283"/>
+   <pair orbital1="23.1" orbital2="-12.1" energy="-0.00100112"/>
+   <pair orbital1="-23.1" orbital2="12.1" energy="-0.00100112"/>
+   <pair orbital1="23.1" orbital2="13.1" energy="-0.0007919"/>
+   <pair orbital1="-23.1" orbital2="-13.1" energy="-0.0007919"/>
+   <pair orbital1="23.1" orbital2="-13.1" energy="-0.00483043"/>
+   <pair orbital1="-23.1" orbital2="13.1" energy="-0.00483043"/>
+   <pair orbital1="23.1" orbital2="14.1" energy="-0.00043942"/>
+   <pair orbital1="-23.1" orbital2="-14.1" energy="-0.00043942"/>
+   <pair orbital1="23.1" orbital2="-14.1" energy="-0.00174679"/>
+   <pair orbital1="-23.1" orbital2="14.1" energy="-0.00174679"/>
+   <pair orbital1="23.1" orbital2="15.1" energy="-0.00098413"/>
+   <pair orbital1="-23.1" orbital2="-15.1" energy="-0.00098413"/>
+   <pair orbital1="23.1" orbital2="-15.1" energy="-0.00481639"/>
+   <pair orbital1="-23.1" orbital2="15.1" energy="-0.00481639"/>
+   <pair orbital1="23.1" orbital2="16.1" energy="-0.00032936"/>
+   <pair orbital1="-23.1" orbital2="-16.1" energy="-0.00032936"/>
+   <pair orbital1="23.1" orbital2="-16.1" energy="-0.00107153"/>
+   <pair orbital1="-23.1" orbital2="16.1" energy="-0.00107153"/>
+   <pair orbital1="23.1" orbital2="17.1" energy="-0.0003208"/>
+   <pair orbital1="-23.1" orbital2="-17.1" energy="-0.0003208"/>
+   <pair orbital1="23.1" orbital2="-17.1" energy="-0.00095342"/>
+   <pair orbital1="-23.1" orbital2="17.1" energy="-0.00095342"/>
+   <pair orbital1="23.1" orbital2="18.1" energy="-0.00119046"/>
+   <pair orbital1="-23.1" orbital2="-18.1" energy="-0.00119046"/>
+   <pair orbital1="23.1" orbital2="-18.1" energy="-0.00269911"/>
+   <pair orbital1="-23.1" orbital2="18.1" energy="-0.00269911"/>
+   <pair orbital1="23.1" orbital2="19.1" energy="-0.00232309"/>
+   <pair orbital1="-23.1" orbital2="-19.1" energy="-0.00232309"/>
+   <pair orbital1="23.1" orbital2="-19.1" energy="-0.004645"/>
+   <pair orbital1="-23.1" orbital2="19.1" energy="-0.004645"/>
+   <pair orbital1="23.1" orbital2="20.1" energy="-0.00095195"/>
+   <pair orbital1="-23.1" orbital2="-20.1" energy="-0.00095195"/>
+   <pair orbital1="23.1" orbital2="-20.1" energy="-0.00331208"/>
+   <pair orbital1="-23.1" orbital2="20.1" energy="-0.00331208"/>
+   <pair orbital1="23.1" orbital2="21.1" energy="-0.00149358"/>
+   <pair orbital1="-23.1" orbital2="-21.1" energy="-0.00149358"/>
+   <pair orbital1="23.1" orbital2="-21.1" energy="-0.00309844"/>
+   <pair orbital1="-23.1" orbital2="21.1" energy="-0.00309844"/>
+   <pair orbital1="23.1" orbital2="22.1" energy="-0.00266692"/>
+   <pair orbital1="-23.1" orbital2="-22.1" energy="-0.00266692"/>
+   <pair orbital1="23.1" orbital2="-22.1" energy="-0.00508104"/>
+   <pair orbital1="-23.1" orbital2="22.1" energy="-0.00508104"/>
+   <pair orbital1="23.1" orbital2="-23.1" energy="-0.0064341"/>
+   <pair orbital1="-23.1" orbital2="23.1" energy="-0.0064341"/>
+   <pair orbital1="24.1" orbital2="2.1" energy="-0.00000278"/>
+   <pair orbital1="-24.1" orbital2="-2.1" energy="-0.00000278"/>
+   <pair orbital1="24.1" orbital2="-2.1" energy="-0.00000288"/>
+   <pair orbital1="-24.1" orbital2="2.1" energy="-0.00000288"/>
+   <pair orbital1="24.1" orbital2="3.1" energy="-0.00011619"/>
+   <pair orbital1="-24.1" orbital2="-3.1" energy="-0.00011619"/>
+   <pair orbital1="24.1" orbital2="-3.1" energy="-0.00012453"/>
+   <pair orbital1="-24.1" orbital2="3.1" energy="-0.00012453"/>
+   <pair orbital1="24.1" orbital2="4.1" energy="-0.00006242"/>
+   <pair orbital1="-24.1" orbital2="-4.1" energy="-0.00006242"/>
+   <pair orbital1="24.1" orbital2="-4.1" energy="-0.00006675"/>
+   <pair orbital1="-24.1" orbital2="4.1" energy="-0.00006675"/>
+   <pair orbital1="24.1" orbital2="5.1" energy="-0.00013416"/>
+   <pair orbital1="-24.1" orbital2="-5.1" energy="-0.00013416"/>
+   <pair orbital1="24.1" orbital2="-5.1" energy="-0.00013693"/>
+   <pair orbital1="-24.1" orbital2="5.1" energy="-0.00013693"/>
+   <pair orbital1="24.1" orbital2="6.1" energy="-0.00012973"/>
+   <pair orbital1="-24.1" orbital2="-6.1" energy="-0.00012973"/>
+   <pair orbital1="24.1" orbital2="-6.1" energy="-0.00013292"/>
+   <pair orbital1="-24.1" orbital2="6.1" energy="-0.00013292"/>
+   <pair orbital1="24.1" orbital2="7.1" energy="-0.0000039"/>
+   <pair orbital1="-24.1" orbital2="-7.1" energy="-0.0000039"/>
+   <pair orbital1="24.1" orbital2="-7.1" energy="-0.00000762"/>
+   <pair orbital1="-24.1" orbital2="7.1" energy="-0.00000762"/>
+   <pair orbital1="24.1" orbital2="8.1" energy="-0.00000851"/>
+   <pair orbital1="-24.1" orbital2="-8.1" energy="-0.00000851"/>
+   <pair orbital1="24.1" orbital2="-8.1" energy="-0.00001345"/>
+   <pair orbital1="-24.1" orbital2="8.1" energy="-0.00001345"/>
+   <pair orbital1="24.1" orbital2="9.1" energy="-0.00000621"/>
+   <pair orbital1="-24.1" orbital2="-9.1" energy="-0.00000621"/>
+   <pair orbital1="24.1" orbital2="-9.1" energy="-0.00001345"/>
+   <pair orbital1="-24.1" orbital2="9.1" energy="-0.00001345"/>
+   <pair orbital1="24.1" orbital2="10.1" energy="-0.00000897"/>
+   <pair orbital1="-24.1" orbital2="-10.1" energy="-0.00000897"/>
+   <pair orbital1="24.1" orbital2="-10.1" energy="-0.00001062"/>
+   <pair orbital1="-24.1" orbital2="10.1" energy="-0.00001062"/>
+   <pair orbital1="24.1" orbital2="11.1" energy="-0.0003685"/>
+   <pair orbital1="-24.1" orbital2="-11.1" energy="-0.0003685"/>
+   <pair orbital1="24.1" orbital2="-11.1" energy="-0.00129689"/>
+   <pair orbital1="-24.1" orbital2="11.1" energy="-0.00129689"/>
+   <pair orbital1="24.1" orbital2="12.1" energy="-0.00050623"/>
+   <pair orbital1="-24.1" orbital2="-12.1" energy="-0.00050623"/>
+   <pair orbital1="24.1" orbital2="-12.1" energy="-0.00169092"/>
+   <pair orbital1="-24.1" orbital2="12.1" energy="-0.00169092"/>
+   <pair orbital1="24.1" orbital2="13.1" energy="-0.00060452"/>
+   <pair orbital1="-24.1" orbital2="-13.1" energy="-0.00060452"/>
+   <pair orbital1="24.1" orbital2="-13.1" energy="-0.0026163"/>
+   <pair orbital1="-24.1" orbital2="13.1" energy="-0.0026163"/>
+   <pair orbital1="24.1" orbital2="14.1" energy="-0.00054348"/>
+   <pair orbital1="-24.1" orbital2="-14.1" energy="-0.00054348"/>
+   <pair orbital1="24.1" orbital2="-14.1" energy="-0.00168677"/>
+   <pair orbital1="-24.1" orbital2="14.1" energy="-0.00168677"/>
+   <pair orbital1="24.1" orbital2="15.1" energy="-0.00067808"/>
+   <pair orbital1="-24.1" orbital2="-15.1" energy="-0.00067808"/>
+   <pair orbital1="24.1" orbital2="-15.1" energy="-0.0036611"/>
+   <pair orbital1="-24.1" orbital2="15.1" energy="-0.0036611"/>
+   <pair orbital1="24.1" orbital2="16.1" energy="-0.00090425"/>
+   <pair orbital1="-24.1" orbital2="-16.1" energy="-0.00090425"/>
+   <pair orbital1="24.1" orbital2="-16.1" energy="-0.00150402"/>
+   <pair orbital1="-24.1" orbital2="16.1" energy="-0.00150402"/>
+   <pair orbital1="24.1" orbital2="17.1" energy="-0.00144386"/>
+   <pair orbital1="-24.1" orbital2="-17.1" energy="-0.00144386"/>
+   <pair orbital1="24.1" orbital2="-17.1" energy="-0.00217446"/>
+   <pair orbital1="-24.1" orbital2="17.1" energy="-0.00217446"/>
+   <pair orbital1="24.1" orbital2="18.1" energy="-0.00129276"/>
+   <pair orbital1="-24.1" orbital2="-18.1" energy="-0.00129276"/>
+   <pair orbital1="24.1" orbital2="-18.1" energy="-0.0026196"/>
+   <pair orbital1="-24.1" orbital2="18.1" energy="-0.0026196"/>
+   <pair orbital1="24.1" orbital2="19.1" energy="-0.00036487"/>
+   <pair orbital1="-24.1" orbital2="-19.1" energy="-0.00036487"/>
+   <pair orbital1="24.1" orbital2="-19.1" energy="-0.00575472"/>
+   <pair orbital1="-24.1" orbital2="19.1" energy="-0.00575472"/>
+   <pair orbital1="24.1" orbital2="20.1" energy="-0.00113903"/>
+   <pair orbital1="-24.1" orbital2="-20.1" energy="-0.00113903"/>
+   <pair orbital1="24.1" orbital2="-20.1" energy="-0.0020505"/>
+   <pair orbital1="-24.1" orbital2="20.1" energy="-0.0020505"/>
+   <pair orbital1="24.1" orbital2="21.1" energy="-0.00019373"/>
+   <pair orbital1="-24.1" orbital2="-21.1" energy="-0.00019373"/>
+   <pair orbital1="24.1" orbital2="-21.1" energy="-0.00555326"/>
+   <pair orbital1="-24.1" orbital2="21.1" energy="-0.00555326"/>
+   <pair orbital1="24.1" orbital2="22.1" energy="-0.00157999"/>
+   <pair orbital1="-24.1" orbital2="-22.1" energy="-0.00157999"/>
+   <pair orbital1="24.1" orbital2="-22.1" energy="-0.00241803"/>
+   <pair orbital1="-24.1" orbital2="22.1" energy="-0.00241803"/>
+   <pair orbital1="24.1" orbital2="23.1" energy="-0.00204535"/>
+   <pair orbital1="-24.1" orbital2="-23.1" energy="-0.00204535"/>
+   <pair orbital1="24.1" orbital2="-23.1" energy="-0.00464838"/>
+   <pair orbital1="-24.1" orbital2="23.1" energy="-0.00464838"/>
+   <pair orbital1="24.1" orbital2="-24.1" energy="-0.00382036"/>
+   <pair orbital1="-24.1" orbital2="24.1" energy="-0.00382036"/>
+   <pair orbital1="25.1" orbital2="2.1" energy="-0.00004646"/>
+   <pair orbital1="-25.1" orbital2="-2.1" energy="-0.00004646"/>
+   <pair orbital1="25.1" orbital2="-2.1" energy="-0.00004788"/>
+   <pair orbital1="-25.1" orbital2="2.1" energy="-0.00004788"/>
+   <pair orbital1="25.1" orbital2="3.1" energy="-0.00003176"/>
+   <pair orbital1="-25.1" orbital2="-3.1" energy="-0.00003176"/>
+   <pair orbital1="25.1" orbital2="-3.1" energy="-0.00003509"/>
+   <pair orbital1="-25.1" orbital2="3.1" energy="-0.00003509"/>
+   <pair orbital1="25.1" orbital2="4.1" energy="-0.00021146"/>
+   <pair orbital1="-25.1" orbital2="-4.1" energy="-0.00021146"/>
+   <pair orbital1="25.1" orbital2="-4.1" energy="-0.00025519"/>
+   <pair orbital1="-25.1" orbital2="4.1" energy="-0.00025519"/>
+   <pair orbital1="25.1" orbital2="5.1" energy="-0.00003751"/>
+   <pair orbital1="-25.1" orbital2="-5.1" energy="-0.00003751"/>
+   <pair orbital1="25.1" orbital2="-5.1" energy="-0.00003832"/>
+   <pair orbital1="-25.1" orbital2="5.1" energy="-0.00003832"/>
+   <pair orbital1="25.1" orbital2="6.1" energy="-0.00001931"/>
+   <pair orbital1="-25.1" orbital2="-6.1" energy="-0.00001931"/>
+   <pair orbital1="25.1" orbital2="-6.1" energy="-0.00001996"/>
+   <pair orbital1="-25.1" orbital2="6.1" energy="-0.00001996"/>
+   <pair orbital1="25.1" orbital2="7.1" energy="-0.00006301"/>
+   <pair orbital1="-25.1" orbital2="-7.1" energy="-0.00006301"/>
+   <pair orbital1="25.1" orbital2="-7.1" energy="-0.00013686"/>
+   <pair orbital1="-25.1" orbital2="7.1" energy="-0.00013686"/>
+   <pair orbital1="25.1" orbital2="8.1" energy="-0.00008484"/>
+   <pair orbital1="-25.1" orbital2="-8.1" energy="-0.00008484"/>
+   <pair orbital1="25.1" orbital2="-8.1" energy="-0.00027074"/>
+   <pair orbital1="-25.1" orbital2="8.1" energy="-0.00027074"/>
+   <pair orbital1="25.1" orbital2="9.1" energy="-0.00016386"/>
+   <pair orbital1="-25.1" orbital2="-9.1" energy="-0.00016386"/>
+   <pair orbital1="25.1" orbital2="-9.1" energy="-0.00019815"/>
+   <pair orbital1="-25.1" orbital2="9.1" energy="-0.00019815"/>
+   <pair orbital1="25.1" orbital2="10.1" energy="-0.00015733"/>
+   <pair orbital1="-25.1" orbital2="-10.1" energy="-0.00015733"/>
+   <pair orbital1="25.1" orbital2="-10.1" energy="-0.00019424"/>
+   <pair orbital1="-25.1" orbital2="10.1" energy="-0.00019424"/>
+   <pair orbital1="25.1" orbital2="11.1" energy="-0.00037832"/>
+   <pair orbital1="-25.1" orbital2="-11.1" energy="-0.00037832"/>
+   <pair orbital1="25.1" orbital2="-11.1" energy="-0.00154766"/>
+   <pair orbital1="-25.1" orbital2="11.1" energy="-0.00154766"/>
+   <pair orbital1="25.1" orbital2="12.1" energy="-0.00042225"/>
+   <pair orbital1="-25.1" orbital2="-12.1" energy="-0.00042225"/>
+   <pair orbital1="25.1" orbital2="-12.1" energy="-0.00118236"/>
+   <pair orbital1="-25.1" orbital2="12.1" energy="-0.00118236"/>
+   <pair orbital1="25.1" orbital2="13.1" energy="-0.00031332"/>
+   <pair orbital1="-25.1" orbital2="-13.1" energy="-0.00031332"/>
+   <pair orbital1="25.1" orbital2="-13.1" energy="-0.00141995"/>
+   <pair orbital1="-25.1" orbital2="13.1" energy="-0.00141995"/>
+   <pair orbital1="25.1" orbital2="14.1" energy="-0.00059675"/>
+   <pair orbital1="-25.1" orbital2="-14.1" energy="-0.00059675"/>
+   <pair orbital1="25.1" orbital2="-14.1" energy="-0.00446765"/>
+   <pair orbital1="-25.1" orbital2="14.1" energy="-0.00446765"/>
+   <pair orbital1="25.1" orbital2="15.1" energy="-0.00038386"/>
+   <pair orbital1="-25.1" orbital2="-15.1" energy="-0.00038386"/>
+   <pair orbital1="25.1" orbital2="-15.1" energy="-0.00155046"/>
+   <pair orbital1="-25.1" orbital2="15.1" energy="-0.00155046"/>
+   <pair orbital1="25.1" orbital2="16.1" energy="-0.00079945"/>
+   <pair orbital1="-25.1" orbital2="-16.1" energy="-0.00079945"/>
+   <pair orbital1="25.1" orbital2="-16.1" energy="-0.00246418"/>
+   <pair orbital1="-25.1" orbital2="16.1" energy="-0.00246418"/>
+   <pair orbital1="25.1" orbital2="17.1" energy="-0.0009792"/>
+   <pair orbital1="-25.1" orbital2="-17.1" energy="-0.0009792"/>
+   <pair orbital1="25.1" orbital2="-17.1" energy="-0.00264851"/>
+   <pair orbital1="-25.1" orbital2="17.1" energy="-0.00264851"/>
+   <pair orbital1="25.1" orbital2="18.1" energy="-0.00071582"/>
+   <pair orbital1="-25.1" orbital2="-18.1" energy="-0.00071582"/>
+   <pair orbital1="25.1" orbital2="-18.1" energy="-0.00234812"/>
+   <pair orbital1="-25.1" orbital2="18.1" energy="-0.00234812"/>
+   <pair orbital1="25.1" orbital2="19.1" energy="-0.00052468"/>
+   <pair orbital1="-25.1" orbital2="-19.1" energy="-0.00052468"/>
+   <pair orbital1="25.1" orbital2="-19.1" energy="-0.00088949"/>
+   <pair orbital1="-25.1" orbital2="19.1" energy="-0.00088949"/>
+   <pair orbital1="25.1" orbital2="20.1" energy="-0.00072146"/>
+   <pair orbital1="-25.1" orbital2="-20.1" energy="-0.00072146"/>
+   <pair orbital1="25.1" orbital2="-20.1" energy="-0.00174623"/>
+   <pair orbital1="-25.1" orbital2="20.1" energy="-0.00174623"/>
+   <pair orbital1="25.1" orbital2="21.1" energy="-0.00114039"/>
+   <pair orbital1="-25.1" orbital2="-21.1" energy="-0.00114039"/>
+   <pair orbital1="25.1" orbital2="-21.1" energy="-0.00176747"/>
+   <pair orbital1="-25.1" orbital2="21.1" energy="-0.00176747"/>
+   <pair orbital1="25.1" orbital2="22.1" energy="-0.00032077"/>
+   <pair orbital1="-25.1" orbital2="-22.1" energy="-0.00032077"/>
+   <pair orbital1="25.1" orbital2="-22.1" energy="-0.0023041"/>
+   <pair orbital1="-25.1" orbital2="22.1" energy="-0.0023041"/>
+   <pair orbital1="25.1" orbital2="23.1" energy="-0.00050766"/>
+   <pair orbital1="-25.1" orbital2="-23.1" energy="-0.00050766"/>
+   <pair orbital1="25.1" orbital2="-23.1" energy="-0.00086023"/>
+   <pair orbital1="-25.1" orbital2="23.1" energy="-0.00086023"/>
+   <pair orbital1="25.1" orbital2="24.1" energy="-0.0008538"/>
+   <pair orbital1="-25.1" orbital2="-24.1" energy="-0.0008538"/>
+   <pair orbital1="25.1" orbital2="-24.1" energy="-0.00155775"/>
+   <pair orbital1="-25.1" orbital2="24.1" energy="-0.00155775"/>
+   <pair orbital1="25.1" orbital2="-25.1" energy="-0.00682017"/>
+   <pair orbital1="-25.1" orbital2="25.1" energy="-0.00682017"/>
+   <pair orbital1="26.1" orbital2="2.1" energy="-0.00028898"/>
+   <pair orbital1="-26.1" orbital2="-2.1" energy="-0.00028898"/>
+   <pair orbital1="26.1" orbital2="-2.1" energy="-0.00030531"/>
+   <pair orbital1="-26.1" orbital2="2.1" energy="-0.00030531"/>
+   <pair orbital1="26.1" orbital2="3.1" energy="-0.00024037"/>
+   <pair orbital1="-26.1" orbital2="-3.1" energy="-0.00024037"/>
+   <pair orbital1="26.1" orbital2="-3.1" energy="-0.00025542"/>
+   <pair orbital1="-26.1" orbital2="3.1" energy="-0.00025542"/>
+   <pair orbital1="26.1" orbital2="4.1" energy="-0.00001762"/>
+   <pair orbital1="-26.1" orbital2="-4.1" energy="-0.00001762"/>
+   <pair orbital1="26.1" orbital2="-4.1" energy="-0.00001797"/>
+   <pair orbital1="-26.1" orbital2="4.1" energy="-0.00001797"/>
+   <pair orbital1="26.1" orbital2="5.1" energy="-0.00003219"/>
+   <pair orbital1="-26.1" orbital2="-5.1" energy="-0.00003219"/>
+   <pair orbital1="26.1" orbital2="-5.1" energy="-0.00003284"/>
+   <pair orbital1="-26.1" orbital2="5.1" energy="-0.00003284"/>
+   <pair orbital1="26.1" orbital2="6.1" energy="-0.00000138"/>
+   <pair orbital1="-26.1" orbital2="-6.1" energy="-0.00000138"/>
+   <pair orbital1="26.1" orbital2="-6.1" energy="-0.00000143"/>
+   <pair orbital1="-26.1" orbital2="6.1" energy="-0.00000143"/>
+   <pair orbital1="26.1" orbital2="7.1" energy="-0.00000119"/>
+   <pair orbital1="-26.1" orbital2="-7.1" energy="-0.00000119"/>
+   <pair orbital1="26.1" orbital2="-7.1" energy="-0.00000192"/>
+   <pair orbital1="-26.1" orbital2="7.1" energy="-0.00000192"/>
+   <pair orbital1="26.1" orbital2="8.1" energy="-0.0000029"/>
+   <pair orbital1="-26.1" orbital2="-8.1" energy="-0.0000029"/>
+   <pair orbital1="26.1" orbital2="-8.1" energy="-0.00000317"/>
+   <pair orbital1="-26.1" orbital2="8.1" energy="-0.00000317"/>
+   <pair orbital1="26.1" orbital2="9.1" energy="-0.0000013"/>
+   <pair orbital1="-26.1" orbital2="-9.1" energy="-0.0000013"/>
+   <pair orbital1="26.1" orbital2="-9.1" energy="-0.00000375"/>
+   <pair orbital1="-26.1" orbital2="9.1" energy="-0.00000375"/>
+   <pair orbital1="26.1" orbital2="10.1" energy="-0.00000234"/>
+   <pair orbital1="-26.1" orbital2="-10.1" energy="-0.00000234"/>
+   <pair orbital1="26.1" orbital2="-10.1" energy="-0.0000029"/>
+   <pair orbital1="-26.1" orbital2="10.1" energy="-0.0000029"/>
+   <pair orbital1="26.1" orbital2="11.1" energy="-0.00093583"/>
+   <pair orbital1="-26.1" orbital2="-11.1" energy="-0.00093583"/>
+   <pair orbital1="26.1" orbital2="-11.1" energy="-0.00346364"/>
+   <pair orbital1="-26.1" orbital2="11.1" energy="-0.00346364"/>
+   <pair orbital1="26.1" orbital2="12.1" energy="-0.00112555"/>
+   <pair orbital1="-26.1" orbital2="-12.1" energy="-0.00112555"/>
+   <pair orbital1="26.1" orbital2="-12.1" energy="-0.00414346"/>
+   <pair orbital1="-26.1" orbital2="12.1" energy="-0.00414346"/>
+   <pair orbital1="26.1" orbital2="13.1" energy="-0.00065346"/>
+   <pair orbital1="-26.1" orbital2="-13.1" energy="-0.00065346"/>
+   <pair orbital1="26.1" orbital2="-13.1" energy="-0.00148074"/>
+   <pair orbital1="-26.1" orbital2="13.1" energy="-0.00148074"/>
+   <pair orbital1="26.1" orbital2="14.1" energy="-0.0005562"/>
+   <pair orbital1="-26.1" orbital2="-14.1" energy="-0.0005562"/>
+   <pair orbital1="26.1" orbital2="-14.1" energy="-0.00106768"/>
+   <pair orbital1="-26.1" orbital2="14.1" energy="-0.00106768"/>
+   <pair orbital1="26.1" orbital2="15.1" energy="-0.00081677"/>
+   <pair orbital1="-26.1" orbital2="-15.1" energy="-0.00081677"/>
+   <pair orbital1="26.1" orbital2="-15.1" energy="-0.00176726"/>
+   <pair orbital1="-26.1" orbital2="15.1" energy="-0.00176726"/>
+   <pair orbital1="26.1" orbital2="16.1" energy="-0.00250246"/>
+   <pair orbital1="-26.1" orbital2="-16.1" energy="-0.00250246"/>
+   <pair orbital1="26.1" orbital2="-16.1" energy="-0.00357967"/>
+   <pair orbital1="-26.1" orbital2="16.1" energy="-0.00357967"/>
+   <pair orbital1="26.1" orbital2="17.1" energy="-0.00278561"/>
+   <pair orbital1="-26.1" orbital2="-17.1" energy="-0.00278561"/>
+   <pair orbital1="26.1" orbital2="-17.1" energy="-0.00391509"/>
+   <pair orbital1="-26.1" orbital2="17.1" energy="-0.00391509"/>
+   <pair orbital1="26.1" orbital2="18.1" energy="-0.00245912"/>
+   <pair orbital1="-26.1" orbital2="-18.1" energy="-0.00245912"/>
+   <pair orbital1="26.1" orbital2="-18.1" energy="-0.00372751"/>
+   <pair orbital1="-26.1" orbital2="18.1" energy="-0.00372751"/>
+   <pair orbital1="26.1" orbital2="19.1" energy="-0.00053937"/>
+   <pair orbital1="-26.1" orbital2="-19.1" energy="-0.00053937"/>
+   <pair orbital1="26.1" orbital2="-19.1" energy="-0.00357204"/>
+   <pair orbital1="-26.1" orbital2="19.1" energy="-0.00357204"/>
+   <pair orbital1="26.1" orbital2="20.1" energy="-0.00302129"/>
+   <pair orbital1="-26.1" orbital2="-20.1" energy="-0.00302129"/>
+   <pair orbital1="26.1" orbital2="-20.1" energy="-0.00432267"/>
+   <pair orbital1="-26.1" orbital2="20.1" energy="-0.00432267"/>
+   <pair orbital1="26.1" orbital2="21.1" energy="-0.00039417"/>
+   <pair orbital1="-26.1" orbital2="-21.1" energy="-0.00039417"/>
+   <pair orbital1="26.1" orbital2="-21.1" energy="-0.00455452"/>
+   <pair orbital1="-26.1" orbital2="21.1" energy="-0.00455452"/>
+   <pair orbital1="26.1" orbital2="22.1" energy="-0.0005726"/>
+   <pair orbital1="-26.1" orbital2="-22.1" energy="-0.0005726"/>
+   <pair orbital1="26.1" orbital2="-22.1" energy="-0.00083584"/>
+   <pair orbital1="-26.1" orbital2="22.1" energy="-0.00083584"/>
+   <pair orbital1="26.1" orbital2="23.1" energy="-0.00075457"/>
+   <pair orbital1="-26.1" orbital2="-23.1" energy="-0.00075457"/>
+   <pair orbital1="26.1" orbital2="-23.1" energy="-0.00137543"/>
+   <pair orbital1="-26.1" orbital2="23.1" energy="-0.00137543"/>
+   <pair orbital1="26.1" orbital2="24.1" energy="-0.00043499"/>
+   <pair orbital1="-26.1" orbital2="-24.1" energy="-0.00043499"/>
+   <pair orbital1="26.1" orbital2="-24.1" energy="-0.00364951"/>
+   <pair orbital1="-26.1" orbital2="24.1" energy="-0.00364951"/>
+   <pair orbital1="26.1" orbital2="25.1" energy="-0.00096898"/>
+   <pair orbital1="-26.1" orbital2="-25.1" energy="-0.00096898"/>
+   <pair orbital1="26.1" orbital2="-25.1" energy="-0.0013227"/>
+   <pair orbital1="-26.1" orbital2="25.1" energy="-0.0013227"/>
+   <pair orbital1="26.1" orbital2="-26.1" energy="-0.00633144"/>
+   <pair orbital1="-26.1" orbital2="26.1" energy="-0.00633144"/>
+   <pair orbital1="27.1" orbital2="2.1" energy="-0.00001376"/>
+   <pair orbital1="-27.1" orbital2="-2.1" energy="-0.00001376"/>
+   <pair orbital1="27.1" orbital2="-2.1" energy="-0.00002008"/>
+   <pair orbital1="-27.1" orbital2="2.1" energy="-0.00002008"/>
+   <pair orbital1="27.1" orbital2="3.1" energy="-0.00001204"/>
+   <pair orbital1="-27.1" orbital2="-3.1" energy="-0.00001204"/>
+   <pair orbital1="27.1" orbital2="-3.1" energy="-0.00001912"/>
+   <pair orbital1="-27.1" orbital2="3.1" energy="-0.00001912"/>
+   <pair orbital1="27.1" orbital2="4.1" energy="-0.0000079"/>
+   <pair orbital1="-27.1" orbital2="-4.1" energy="-0.0000079"/>
+   <pair orbital1="27.1" orbital2="-4.1" energy="-0.00000798"/>
+   <pair orbital1="-27.1" orbital2="4.1" energy="-0.00000798"/>
+   <pair orbital1="27.1" orbital2="5.1" energy="-0.00000582"/>
+   <pair orbital1="-27.1" orbital2="-5.1" energy="-0.00000582"/>
+   <pair orbital1="27.1" orbital2="-5.1" energy="-0.00000706"/>
+   <pair orbital1="-27.1" orbital2="5.1" energy="-0.00000706"/>
+   <pair orbital1="27.1" orbital2="6.1" energy="-0.00000103"/>
+   <pair orbital1="-27.1" orbital2="-6.1" energy="-0.00000103"/>
+   <pair orbital1="27.1" orbital2="-6.1" energy="-0.00000118"/>
+   <pair orbital1="-27.1" orbital2="6.1" energy="-0.00000118"/>
+   <pair orbital1="27.1" orbital2="7.1" energy="-0.00009737"/>
+   <pair orbital1="-27.1" orbital2="-7.1" energy="-0.00009737"/>
+   <pair orbital1="27.1" orbital2="-7.1" energy="-0.0001744"/>
+   <pair orbital1="-27.1" orbital2="7.1" energy="-0.0001744"/>
+   <pair orbital1="27.1" orbital2="8.1" energy="-0.00023457"/>
+   <pair orbital1="-27.1" orbital2="-8.1" energy="-0.00023457"/>
+   <pair orbital1="27.1" orbital2="-8.1" energy="-0.00025794"/>
+   <pair orbital1="-27.1" orbital2="8.1" energy="-0.00025794"/>
+   <pair orbital1="27.1" orbital2="9.1" energy="-0.00021676"/>
+   <pair orbital1="-27.1" orbital2="-9.1" energy="-0.00021676"/>
+   <pair orbital1="27.1" orbital2="-9.1" energy="-0.00024072"/>
+   <pair orbital1="-27.1" orbital2="9.1" energy="-0.00024072"/>
+   <pair orbital1="27.1" orbital2="10.1" energy="-0.00005578"/>
+   <pair orbital1="-27.1" orbital2="-10.1" energy="-0.00005578"/>
+   <pair orbital1="27.1" orbital2="-10.1" energy="-0.00035657"/>
+   <pair orbital1="-27.1" orbital2="10.1" energy="-0.00035657"/>
+   <pair orbital1="27.1" orbital2="11.1" energy="-0.00014077"/>
+   <pair orbital1="-27.1" orbital2="-11.1" energy="-0.00014077"/>
+   <pair orbital1="27.1" orbital2="-11.1" energy="-0.00043568"/>
+   <pair orbital1="-27.1" orbital2="11.1" energy="-0.00043568"/>
+   <pair orbital1="27.1" orbital2="12.1" energy="-0.00012975"/>
+   <pair orbital1="-27.1" orbital2="-12.1" energy="-0.00012975"/>
+   <pair orbital1="27.1" orbital2="-12.1" energy="-0.00040187"/>
+   <pair orbital1="-27.1" orbital2="12.1" energy="-0.00040187"/>
+   <pair orbital1="27.1" orbital2="13.1" energy="-0.00018251"/>
+   <pair orbital1="-27.1" orbital2="-13.1" energy="-0.00018251"/>
+   <pair orbital1="27.1" orbital2="-13.1" energy="-0.000543"/>
+   <pair orbital1="-27.1" orbital2="13.1" energy="-0.000543"/>
+   <pair orbital1="27.1" orbital2="14.1" energy="-0.00092334"/>
+   <pair orbital1="-27.1" orbital2="-14.1" energy="-0.00092334"/>
+   <pair orbital1="27.1" orbital2="-14.1" energy="-0.00331738"/>
+   <pair orbital1="-27.1" orbital2="14.1" energy="-0.00331738"/>
+   <pair orbital1="27.1" orbital2="15.1" energy="-0.00027915"/>
+   <pair orbital1="-27.1" orbital2="-15.1" energy="-0.00027915"/>
+   <pair orbital1="27.1" orbital2="-15.1" energy="-0.00101783"/>
+   <pair orbital1="-27.1" orbital2="15.1" energy="-0.00101783"/>
+   <pair orbital1="27.1" orbital2="16.1" energy="-0.00045771"/>
+   <pair orbital1="-27.1" orbital2="-16.1" energy="-0.00045771"/>
+   <pair orbital1="27.1" orbital2="-16.1" energy="-0.00154371"/>
+   <pair orbital1="-27.1" orbital2="16.1" energy="-0.00154371"/>
+   <pair orbital1="27.1" orbital2="17.1" energy="-0.00050298"/>
+   <pair orbital1="-27.1" orbital2="-17.1" energy="-0.00050298"/>
+   <pair orbital1="27.1" orbital2="-17.1" energy="-0.00144515"/>
+   <pair orbital1="-27.1" orbital2="17.1" energy="-0.00144515"/>
+   <pair orbital1="27.1" orbital2="18.1" energy="-0.00053522"/>
+   <pair orbital1="-27.1" orbital2="-18.1" energy="-0.00053522"/>
+   <pair orbital1="27.1" orbital2="-18.1" energy="-0.00129381"/>
+   <pair orbital1="-27.1" orbital2="18.1" energy="-0.00129381"/>
+   <pair orbital1="27.1" orbital2="19.1" energy="-0.00014157"/>
+   <pair orbital1="-27.1" orbital2="-19.1" energy="-0.00014157"/>
+   <pair orbital1="27.1" orbital2="-19.1" energy="-0.00020251"/>
+   <pair orbital1="-27.1" orbital2="19.1" energy="-0.00020251"/>
+   <pair orbital1="27.1" orbital2="20.1" energy="-0.00041255"/>
+   <pair orbital1="-27.1" orbital2="-20.1" energy="-0.00041255"/>
+   <pair orbital1="27.1" orbital2="-20.1" energy="-0.00072173"/>
+   <pair orbital1="-27.1" orbital2="20.1" energy="-0.00072173"/>
+   <pair orbital1="27.1" orbital2="21.1" energy="-0.00042613"/>
+   <pair orbital1="-27.1" orbital2="-21.1" energy="-0.00042613"/>
+   <pair orbital1="27.1" orbital2="-21.1" energy="-0.00057943"/>
+   <pair orbital1="-27.1" orbital2="21.1" energy="-0.00057943"/>
+   <pair orbital1="27.1" orbital2="22.1" energy="-0.00037238"/>
+   <pair orbital1="-27.1" orbital2="-22.1" energy="-0.00037238"/>
+   <pair orbital1="27.1" orbital2="-22.1" energy="-0.00076991"/>
+   <pair orbital1="-27.1" orbital2="22.1" energy="-0.00076991"/>
+   <pair orbital1="27.1" orbital2="23.1" energy="-0.0001235"/>
+   <pair orbital1="-27.1" orbital2="-23.1" energy="-0.0001235"/>
+   <pair orbital1="27.1" orbital2="-23.1" energy="-0.00018047"/>
+   <pair orbital1="-27.1" orbital2="23.1" energy="-0.00018047"/>
+   <pair orbital1="27.1" orbital2="24.1" energy="-0.00041837"/>
+   <pair orbital1="-27.1" orbital2="-24.1" energy="-0.00041837"/>
+   <pair orbital1="27.1" orbital2="-24.1" energy="-0.00060345"/>
+   <pair orbital1="-27.1" orbital2="24.1" energy="-0.00060345"/>
+   <pair orbital1="27.1" orbital2="25.1" energy="-0.00392976"/>
+   <pair orbital1="-27.1" orbital2="-25.1" energy="-0.00392976"/>
+   <pair orbital1="27.1" orbital2="-25.1" energy="-0.00640178"/>
+   <pair orbital1="-27.1" orbital2="25.1" energy="-0.00640178"/>
+   <pair orbital1="27.1" orbital2="26.1" energy="-0.00047757"/>
+   <pair orbital1="-27.1" orbital2="-26.1" energy="-0.00047757"/>
+   <pair orbital1="27.1" orbital2="-26.1" energy="-0.0007248"/>
+   <pair orbital1="-27.1" orbital2="26.1" energy="-0.0007248"/>
+   <pair orbital1="27.1" orbital2="-27.1" energy="-0.00974803"/>
+   <pair orbital1="-27.1" orbital2="27.1" energy="-0.00974803"/>
+   <pair orbital1="28.1" orbital2="2.1" energy="-0.00006799"/>
+   <pair orbital1="-28.1" orbital2="-2.1" energy="-0.00006799"/>
+   <pair orbital1="28.1" orbital2="-2.1" energy="-0.00007141"/>
+   <pair orbital1="-28.1" orbital2="2.1" energy="-0.00007141"/>
+   <pair orbital1="28.1" orbital2="3.1" energy="-0.00004031"/>
+   <pair orbital1="-28.1" orbital2="-3.1" energy="-0.00004031"/>
+   <pair orbital1="28.1" orbital2="-3.1" energy="-0.00004248"/>
+   <pair orbital1="-28.1" orbital2="3.1" energy="-0.00004248"/>
+   <pair orbital1="28.1" orbital2="4.1" energy="-0.00002588"/>
+   <pair orbital1="-28.1" orbital2="-4.1" energy="-0.00002588"/>
+   <pair orbital1="28.1" orbital2="-4.1" energy="-0.00002663"/>
+   <pair orbital1="-28.1" orbital2="4.1" energy="-0.00002663"/>
+   <pair orbital1="28.1" orbital2="5.1" energy="-0.00000545"/>
+   <pair orbital1="-28.1" orbital2="-5.1" energy="-0.00000545"/>
+   <pair orbital1="28.1" orbital2="-5.1" energy="-0.00000556"/>
+   <pair orbital1="-28.1" orbital2="5.1" energy="-0.00000556"/>
+   <pair orbital1="28.1" orbital2="6.1" energy="-0.0000002"/>
+   <pair orbital1="-28.1" orbital2="-6.1" energy="-0.0000002"/>
+   <pair orbital1="28.1" orbital2="-6.1" energy="-0.0000002"/>
+   <pair orbital1="-28.1" orbital2="6.1" energy="-0.0000002"/>
+   <pair orbital1="28.1" orbital2="7.1" energy="-0.00008117"/>
+   <pair orbital1="-28.1" orbital2="-7.1" energy="-0.00008117"/>
+   <pair orbital1="28.1" orbital2="-7.1" energy="-0.00014488"/>
+   <pair orbital1="-28.1" orbital2="7.1" energy="-0.00014488"/>
+   <pair orbital1="28.1" orbital2="8.1" energy="-0.00019766"/>
+   <pair orbital1="-28.1" orbital2="-8.1" energy="-0.00019766"/>
+   <pair orbital1="28.1" orbital2="-8.1" energy="-0.00021677"/>
+   <pair orbital1="-28.1" orbital2="8.1" energy="-0.00021677"/>
+   <pair orbital1="28.1" orbital2="9.1" energy="-0.00004886"/>
+   <pair orbital1="-28.1" orbital2="-9.1" energy="-0.00004886"/>
+   <pair orbital1="28.1" orbital2="-9.1" energy="-0.00029888"/>
+   <pair orbital1="-28.1" orbital2="9.1" energy="-0.00029888"/>
+   <pair orbital1="28.1" orbital2="10.1" energy="-0.0001757"/>
+   <pair orbital1="-28.1" orbital2="-10.1" energy="-0.0001757"/>
+   <pair orbital1="28.1" orbital2="-10.1" energy="-0.000197"/>
+   <pair orbital1="-28.1" orbital2="10.1" energy="-0.000197"/>
+   <pair orbital1="28.1" orbital2="11.1" energy="-0.00030542"/>
+   <pair orbital1="-28.1" orbital2="-11.1" energy="-0.00030542"/>
+   <pair orbital1="28.1" orbital2="-11.1" energy="-0.00088496"/>
+   <pair orbital1="-28.1" orbital2="11.1" energy="-0.00088496"/>
+   <pair orbital1="28.1" orbital2="12.1" energy="-0.00030064"/>
+   <pair orbital1="-28.1" orbital2="-12.1" energy="-0.00030064"/>
+   <pair orbital1="28.1" orbital2="-12.1" energy="-0.0008753"/>
+   <pair orbital1="-28.1" orbital2="12.1" energy="-0.0008753"/>
+   <pair orbital1="28.1" orbital2="13.1" energy="-0.00029304"/>
+   <pair orbital1="-28.1" orbital2="-13.1" energy="-0.00029304"/>
+   <pair orbital1="28.1" orbital2="-13.1" energy="-0.00068785"/>
+   <pair orbital1="-28.1" orbital2="13.1" energy="-0.00068785"/>
+   <pair orbital1="28.1" orbital2="14.1" energy="-0.00102253"/>
+   <pair orbital1="-28.1" orbital2="-14.1" energy="-0.00102253"/>
+   <pair orbital1="28.1" orbital2="-14.1" energy="-0.00352132"/>
+   <pair orbital1="-28.1" orbital2="14.1" energy="-0.00352132"/>
+   <pair orbital1="28.1" orbital2="15.1" energy="-0.00041825"/>
+   <pair orbital1="-28.1" orbital2="-15.1" energy="-0.00041825"/>
+   <pair orbital1="28.1" orbital2="-15.1" energy="-0.0011875"/>
+   <pair orbital1="-28.1" orbital2="15.1" energy="-0.0011875"/>
+   <pair orbital1="28.1" orbital2="16.1" energy="-0.00089804"/>
+   <pair orbital1="-28.1" orbital2="-16.1" energy="-0.00089804"/>
+   <pair orbital1="28.1" orbital2="-16.1" energy="-0.00189337"/>
+   <pair orbital1="-28.1" orbital2="16.1" energy="-0.00189337"/>
+   <pair orbital1="28.1" orbital2="17.1" energy="-0.0008828"/>
+   <pair orbital1="-28.1" orbital2="-17.1" energy="-0.0008828"/>
+   <pair orbital1="28.1" orbital2="-17.1" energy="-0.0014656"/>
+   <pair orbital1="-28.1" orbital2="17.1" energy="-0.0014656"/>
+   <pair orbital1="28.1" orbital2="18.1" energy="-0.00083614"/>
+   <pair orbital1="-28.1" orbital2="-18.1" energy="-0.00083614"/>
+   <pair orbital1="28.1" orbital2="-18.1" energy="-0.00156797"/>
+   <pair orbital1="-28.1" orbital2="18.1" energy="-0.00156797"/>
+   <pair orbital1="28.1" orbital2="19.1" energy="-0.00019718"/>
+   <pair orbital1="-28.1" orbital2="-19.1" energy="-0.00019718"/>
+   <pair orbital1="28.1" orbital2="-19.1" energy="-0.00084949"/>
+   <pair orbital1="-28.1" orbital2="19.1" energy="-0.00084949"/>
+   <pair orbital1="28.1" orbital2="20.1" energy="-0.00082791"/>
+   <pair orbital1="-28.1" orbital2="-20.1" energy="-0.00082791"/>
+   <pair orbital1="28.1" orbital2="-20.1" energy="-0.00125839"/>
+   <pair orbital1="-28.1" orbital2="20.1" energy="-0.00125839"/>
+   <pair orbital1="28.1" orbital2="21.1" energy="-0.00041527"/>
+   <pair orbital1="-28.1" orbital2="-21.1" energy="-0.00041527"/>
+   <pair orbital1="28.1" orbital2="-21.1" energy="-0.00177453"/>
+   <pair orbital1="-28.1" orbital2="21.1" energy="-0.00177453"/>
+   <pair orbital1="28.1" orbital2="22.1" energy="-0.00047246"/>
+   <pair orbital1="-28.1" orbital2="-22.1" energy="-0.00047246"/>
+   <pair orbital1="28.1" orbital2="-22.1" energy="-0.00078254"/>
+   <pair orbital1="-28.1" orbital2="22.1" energy="-0.00078254"/>
+   <pair orbital1="28.1" orbital2="23.1" energy="-0.00021691"/>
+   <pair orbital1="-28.1" orbital2="-23.1" energy="-0.00021691"/>
+   <pair orbital1="28.1" orbital2="-23.1" energy="-0.00032835"/>
+   <pair orbital1="-28.1" orbital2="23.1" energy="-0.00032835"/>
+   <pair orbital1="28.1" orbital2="24.1" energy="-0.00037016"/>
+   <pair orbital1="-28.1" orbital2="-24.1" energy="-0.00037016"/>
+   <pair orbital1="28.1" orbital2="-24.1" energy="-0.00143827"/>
+   <pair orbital1="-28.1" orbital2="24.1" energy="-0.00143827"/>
+   <pair orbital1="28.1" orbital2="25.1" energy="-0.00432188"/>
+   <pair orbital1="-28.1" orbital2="-25.1" energy="-0.00432188"/>
+   <pair orbital1="28.1" orbital2="-25.1" energy="-0.00641759"/>
+   <pair orbital1="-28.1" orbital2="25.1" energy="-0.00641759"/>
+   <pair orbital1="28.1" orbital2="26.1" energy="-0.00024346"/>
+   <pair orbital1="-28.1" orbital2="-26.1" energy="-0.00024346"/>
+   <pair orbital1="28.1" orbital2="-26.1" energy="-0.00270918"/>
+   <pair orbital1="-28.1" orbital2="26.1" energy="-0.00270918"/>
+   <pair orbital1="28.1" orbital2="27.1" energy="-0.00529377"/>
+   <pair orbital1="-28.1" orbital2="-27.1" energy="-0.00529377"/>
+   <pair orbital1="28.1" orbital2="-27.1" energy="-0.00785927"/>
+   <pair orbital1="-28.1" orbital2="27.1" energy="-0.00785927"/>
+   <pair orbital1="28.1" orbital2="-28.1" energy="-0.0085521"/>
+   <pair orbital1="-28.1" orbital2="28.1" energy="-0.0085521"/>
+   <property name="core-core energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.710257339467838E-01"/>
+   <property name="core-valence energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.455324697477032E-01"/>
+   <property name="valence correlation energy" method="CCSD" stateSymmetry="1"
+     stateNumber="1" value="-1.13923603267433"/>
+   <property name="singlet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.856059379758894"/>
+   <property name="triplet pair energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-0.39973572193385"/>
+   <property name="correlation energy" method="CCSD" stateSymmetry="1" stateNumber="1"
+     value="-1.25579423636882"/>
+   <property name="total energy" method="CCSD" principal="true" stateSymmetry="1"
+     stateNumber="1" value="-626.061952666339"/>
+   <time start="09:13:34" end="09:44:10" cpu="1820.76" system="87.01" real="1836.31"/>
+   <storage units="megabyte" memory="24000.0" sf="0.0" df="11657.1" eaf="0.0"/>
+   <summary overall_method="CCSD/cc-pVTZ"/>
+  </jobstep>
+  <molecule id="M4EF6B04" method="CCSD" basis="cc-pVTZ" energy="-626.061952666339">
+   <cml:molecule id="M4EF6B04" spinMultiplicity="1" formalCharge="0">
+    <cml:symmetry pointGroup="C1" irreducibleRepresentation="1">
+    </cml:symmetry>
+    <cml:atomArray>
+     <cml:atom id="a1" elementType="C" x3="0.62527800830666" y3="2.89809627957375"
+       z3="-0.3936045477419E-01"/>
+     <cml:atom id="a2" elementType="C" x3="-0.3425538827627" y3="1.7374537000331"
+       z3="-0.3150100176433E-01"/>
+     <cml:atom id="a3" elementType="N" x3="0.36138843311159" y3="0.47998433732143"
+       z3="0.1403975045456E-01"/>
+     <cml:atom id="a4" elementType="C" x3="-0.22542645347882" y3="-0.72812870820658"
+       z3="0.9515084552755E-01"/>
+     <cml:atom id="a5" elementType="N" x3="-1.56562722239652" y3="-0.73828988669266"
+       z3="-0.7257090139012E-01"/>
+     <cml:atom id="a6" elementType="S" x3="0.64293020269652" y3="-2.11955820431433"
+       z3="0.35396039167116"/>
+     <cml:atom id="a7" elementType="H" x3="-2.11587316489113" y3="0.9765190100243E-01"
+       z3="-0.3875317825241E-01"/>
+     <cml:atom id="a8" elementType="H" x3="-2.02216029547534" y3="-1.61654192112677"
+       z3="0.7076902579688E-01"/>
+     <cml:atom id="a9" elementType="H" x3="1.34388428549199" y3="0.47744786420014"
+       z3="0.21511755062804"/>
+     <cml:atom id="a10" elementType="H" x3="-0.96428971121995" y3="1.77250469141176"
+       z3="-0.92748736392476"/>
+     <cml:atom id="a11" elementType="H" x3="-1.00987152277285" y3="1.8268441892815"
+       z3="0.8310916029436"/>
+     <cml:atom id="a12" elementType="H" x3="1.29351690735313" y3="2.84225750698511"
+       z3="-0.89453694539721"/>
+     <cml:atom id="a13" elementType="H" x3="0.7941403827619E-01" y3="3.83516192614587"
+       z3="-0.9217618418552E-01"/>
+     <cml:atom id="a14" elementType="H" x3="1.2290593777612" y3="2.90822932438525"
+       z3="0.86522986266675"/>
+    </cml:atomArray>
+    <cml:bondArray>
+     <cml:bond atomRefs2="a1 a2"/>
+     <cml:bond atomRefs2="a2 a3"/>
+     <cml:bond atomRefs2="a3 a4"/>
+     <cml:bond atomRefs2="a4 a5"/>
+     <cml:bond atomRefs2="a4 a6"/>
+     <cml:bond atomRefs2="a5 a7"/>
+     <cml:bond atomRefs2="a5 a8"/>
+     <cml:bond atomRefs2="a3 a9"/>
+     <cml:bond atomRefs2="a2 a10"/>
+     <cml:bond atomRefs2="a2 a11"/>
+     <cml:bond atomRefs2="a1 a12"/>
+     <cml:bond atomRefs2="a1 a13"/>
+     <cml:bond atomRefs2="a1 a14"/>
+    </cml:bondArray>
+   </cml:molecule>
+   <symmetry>
+    <irreducibleRepresentation index="1" id="A" cartesian=""/>
+   </symmetry>
+   <basisSet id="ORBITAL" length="296" angular="spherical" type="gaussian" groups="62"
+     cartesianLength="334" primitives="435">
+    <basisGroup id="1" minL="0" maxL="0" primitives="10" angular="spherical" contractions="4">
+     <basisExponents>
+       8236.0 1235.0 280.8 79.27 25.59 8.997 3.319 0.9059 0.3643 0.1285
+     </basisExponents>
+     <basisContraction id="1">
+       0.530999861701152E-03 0.410799893007219E-02 0.210869945078949E-01 0.818529786814019E-01 0.234816938841957 0.434400886860343 0.346128909850768 0.393779897440075E-01 -0.898299766037938E-02 0.238499937882721E-02
+     </basisContraction>
+     <basisContraction id="2">
+       -0.112999941426271E-03 -0.877999544887313E-03 -0.453999764668383E-02 -0.181329906007308E-01 -0.557599710967159E-01 -0.126894934223776 -0.170351911697772 0.140381927232769 0.598683689671203 0.395388795049487
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0
+     </basisContraction>
+     <basisContraction id="4">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="2" minL="1" maxL="1" primitives="5" angular="spherical" contractions="3">
+     <basisExponents>
+       18.71 4.133 1.2 0.3827 0.1209
+     </basisExponents>
+     <basisContraction id="1">
+       0.140309983770888E-01 0.868659899525478E-01 0.290215966431844 0.501007942050354 0.343405960279564
+     </basisContraction>
+     <basisContraction id="2">
+       0.0 0.0 0.0 1.0 0.0
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="3" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       1.097
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="4" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.318
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="5" minL="3" maxL="3" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.761
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="6" minL="0" maxL="0" primitives="10" angular="spherical" contractions="4">
+     <basisExponents>
+       11420.0 1712.0 389.3 110.0 35.57 12.54 4.644 1.293 0.5118 0.1787
+     </basisExponents>
+     <basisContraction id="1">
+       0.522999655921768E-03 0.404499733882132E-02 0.207749863322652E-01 0.807269468902419E-01 0.233073846662161 0.433500714802566 0.347471771400475 0.412619728540038E-01 -0.850799440264321E-02 0.238399843158221E-02
+     </basisContraction>
+     <basisContraction id="2">
+       -0.114999954404892E-03 -0.894999645151114E-03 -0.462399816668017E-02 -0.185279926540333E-01 -0.57338977266279E-01 -0.132075947634613 -0.172509931603373 0.151813939808906 0.599943762134682 0.387461846379375
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0
+     </basisContraction>
+     <basisContraction id="4">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="7" minL="1" maxL="1" primitives="5" angular="spherical" contractions="3">
+     <basisExponents>
+       26.63 5.948 1.742 0.555 0.1725
+     </basisExponents>
+     <basisContraction id="1">
+       0.146700034452444E-01 0.917640215507432E-01 0.298683070145598 0.498487117069497 0.337023079149733
+     </basisContraction>
+     <basisContraction id="2">
+       0.0 0.0 0.0 1.0 0.0
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="8" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       1.654
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="9" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.469
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="10" minL="3" maxL="3" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       1.093
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="11" minL="0" maxL="0" primitives="15" angular="spherical" contractions="5">
+     <basisExponents>
+       374100.0 56050.0 12760.0 3615.0 1183.0 428.8 167.8 69.47 29.84 12.72
+       5.244 2.219 0.7767 0.349 0.1322
+     </basisExponents>
+     <basisContraction id="1">
+       0.542140346261279E-04 0.420855268797342E-03 0.220698140958372E-02 0.919258587124085E-02 0.321123205099164E-01 0.946683604640253E-01 0.223630142831021 0.374393239122365 0.329108210199132 0.847038540997642E-01
+       0.440851281568656E-03 0.164827105273929E-02 -0.622332397479386E-03 0.301306192442176E-03 -0.841290537326432E-04
+     </basisContraction>
+     <basisContraction id="2">
+       -0.149837065071972E-04 -0.116198050463057E-03 -0.611583265601368E-03 -0.255370110903379E-02 -0.90870839463832E-02 -0.277045120316508E-01 -0.720020312693938E-01 -0.146439063596272 -0.195150084750732 0.819193355763292E-02
+       0.516601224352103 0.542178235459812 0.688430298974873E-01 -0.918072398704965E-02 0.226832098509752E-02
+     </basisContraction>
+     <basisContraction id="3">
+       0.43506573505961E-05 0.337139794693212E-04 0.17767389180258E-03 0.741115548685574E-03 0.264590838873084E-02 0.807486508267894E-02 0.212275870731139E-01 0.438322733076208E-01 0.612715626876805E-01 -0.361509779852711E-02
+       -0.204509875460369 -0.381870767453555 0.826843496480139E-01 0.714146565108777 0.393790760194681
+     </basisContraction>
+     <basisContraction id="4">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+       0.0 0.0 1.0 0.0 0.0
+     </basisContraction>
+     <basisContraction id="5">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0
+       0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="12" minL="1" maxL="1" primitives="9" angular="spherical" contractions="4">
+     <basisExponents>
+       574.4 135.8 43.19 15.87 6.208 2.483 0.8688 0.3229 0.1098
+     </basisExponents>
+     <basisContraction id="1">
+       0.242263852495772E-02 0.192795882614729E-01 0.885400460917052E-01 0.254653844952028 0.433983735765631 0.35495278388424 0.618940623153194E-01 -0.502976693758733E-02 0.209812872253803E-02
+     </basisContraction>
+     <basisContraction id="2">
+       -0.620101827483308E-03 -0.49388186259859E-02 -0.232646935275985E-01 -0.685194809373982E-01 -0.12389596553127 -0.969498730278631E-01 0.228214936508999 0.569393841590626 0.366301898092234
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 0.0 0.0 1.0 0.0 0.0
+     </basisContraction>
+     <basisContraction id="4">
+       0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="13" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.269
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="14" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.819
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="15" minL="3" maxL="3" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.557
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="16" minL="0" maxL="0" primitives="5" angular="spherical" contractions="3">
+     <basisExponents>
+       33.87 5.095 1.159 0.3258 0.1027
+     </basisExponents>
+     <basisContraction id="1">
+       0.606799921721604E-02 0.453079941551787E-01 0.202821973835562 0.50390293499552 0.383420950537935
+     </basisContraction>
+     <basisContraction id="2">
+       0.0 0.0 0.0 1.0 0.0
+     </basisContraction>
+     <basisContraction id="3">
+       0.0 0.0 0.0 0.0 1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="17" minL="1" maxL="1" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       1.407
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="18" minL="1" maxL="1" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       0.388
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <basisGroup id="19" minL="2" maxL="2" primitives="1" angular="spherical" contractions="1">
+     <basisExponents>
+       1.057
+     </basisExponents>
+     <basisContraction id="1">
+       1.0
+     </basisContraction>
+    </basisGroup>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//basisGroup[@id='1' or @id='2' or @id='3' or @id='4' or @id='5'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//atom[@id='a1' or @id='a2' or @id='a4'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//basisGroup[@id='6' or @id='7' or @id='8' or @id='9' or @id='10'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//atom[@id='a3' or @id='a5'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//basisGroup[@id='11' or @id='12' or @id='13' or @id='14' or @id='15'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//atom[@id='a6'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+    <association xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="extended">
+     <bases xlink:type="locator" xlink:label="bases"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//basisGroup[@id='16' or @id='17' or @id='18' or @id='19'])"/>
+     <atoms xlink:label="atoms"
+       xlink:href="#xpointer(//molecule[@id='M4EF6B04']//atom[@id='a7' or @id='a8' or @id='a9' or @id='a10' or @id='a11' or @id='a12' or @id='a13' or @id='a14'])"/>
+     <associate xlink:type="arc" xlink:from="atoms" xlink:to="bases"/>
+    </association>
+   </basisSet>
+   <variables>
+    <variable name="_NUMVAR" type="xsd:double" length="1">
+     <value>1077.0</value>
+    </variable>
+    <variable name="_AVOGAD" type="xsd:double" units="1/MOL" length="1">
+     <value>0.602214076E+24</value>
+    </variable>
+    <variable name="_BOLTZ" type="xsd:double" units="J/K" length="1">
+     <value>0.1380649E-22</value>
+    </variable>
+    <variable name="_CLIGHTSI" type="xsd:double" units="m/s" length="1">
+     <value>299792458.0</value>
+    </variable>
+    <variable name="_JOULE" type="xsd:double" units="J" length="1">
+     <value>0.43597447222071E-17</value>
+    </variable>
+    <variable name="_JPCAL" type="xsd:double" units="J/cal" length="1">
+     <value>4.184</value>
+    </variable>
+    <variable name="_PLANCK" type="xsd:double" units="Js" length="1">
+     <value>0.662607015E-33</value>
+    </variable>
+    <variable name="_BOHR" type="xsd:double" units="m" length="1">
+     <value>0.529177210903E-10</value>
+    </variable>
+    <variable name="_ECHARG" type="xsd:double" units="C" length="1">
+     <value>0.1602176634E-18</value>
+    </variable>
+    <variable name="_ENULL" type="xsd:double" units="C/Vm" length="1">
+     <value>0.88541878128E-11</value>
+    </variable>
+    <variable name="_MU" type="xsd:double" units="kg" length="1">
+     <value>0.16605390666E-26</value>
+    </variable>
+    <variable name="_EMASS" type="xsd:double" units="kg" length="1">
+     <value>0.91093837015E-30</value>
+    </variable>
+    <variable name="_AMU2AU" type="xsd:double" units="HARTREE" length="1">
+     <value>1822.88848621731</value>
+    </variable>
+    <variable name="_CLIGHT" type="xsd:double" units="cm/s" length="1">
+     <value>29979245800.0</value>
+    </variable>
+    <variable name="_EV" type="xsd:double" units="HARTREE" length="1">
+     <value>0.367493221756549E-01</value>
+    </variable>
+    <variable name="_KJOULE" type="xsd:double" units="HARTREE" length="1">
+     <value>0.380879884713343E-03</value>
+    </variable>
+    <variable name="_KJOULE/MOL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.380879884713343E-03</value>
+    </variable>
+    <variable name="_CM" type="xsd:double" units="HARTREE" length="1">
+     <value>0.455633525291201E-05</value>
+    </variable>
+    <variable name="_CM-1" type="xsd:double" units="HARTREE" length="1">
+     <value>0.455633525291201E-05</value>
+    </variable>
+    <variable name="_DEB2SI" type="xsd:double" units="Cm" length="1">
+     <value>0.333564095198152E-29</value>
+    </variable>
+    <variable name="_KCAL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.159360143764063E-02</value>
+    </variable>
+    <variable name="_KCAL/MOL" type="xsd:double" units="HARTREE" length="1">
+     <value>0.159360143764063E-02</value>
+    </variable>
+    <variable name="_KELVIN" type="xsd:double" units="HARTREE" length="1">
+     <value>0.316681156345561E-05</value>
+    </variable>
+    <variable name="_HERTZ" type="xsd:double" units="HARTREE" length="1">
+     <value>0.151982984605704E-15</value>
+    </variable>
+    <variable name="_HZ" type="xsd:double" units="HARTREE" length="1">
+     <value>0.151982984605704E-15</value>
+    </variable>
+    <variable name="_TOA" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.529177210903</value>
+    </variable>
+    <variable name="_TOANG" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.529177210903</value>
+    </variable>
+    <variable name="_TORAD" type="xsd:double" units="RAD" length="1">
+     <value>0.174532925199433E-01</value>
+    </variable>
+    <variable name="_TOCM" type="xsd:double" units="CM-1" length="1">
+     <value>219474.631363197</value>
+    </variable>
+    <variable name="_TODEBYE" type="xsd:double" units="DEBYE" length="1">
+     <value>2.54174647319408</value>
+    </variable>
+    <variable name="_TOE" type="xsd:double" units="ESU" length="1">
+     <value>0.480320471257026E-09</value>
+    </variable>
+    <variable name="_TOEV" type="xsd:double" units="EV" length="1">
+     <value>27.211386245988</value>
+    </variable>
+    <variable name="_TOHERTZ" type="xsd:double" units="HZ" length="1">
+     <value>0.657968392050166E+16</value>
+    </variable>
+    <variable name="_TOHZ" type="xsd:double" units="HZ" length="1">
+     <value>0.657968392050166E+16</value>
+    </variable>
+    <variable name="_TOK" type="xsd:double" units="K" length="1">
+     <value>315775.024804067</value>
+    </variable>
+    <variable name="_TOKCAL" type="xsd:double" units="KCAL/MOL" length="1">
+     <value>627.509474063056</value>
+    </variable>
+    <variable name="_TOKELVIN" type="xsd:double" units="K" length="1">
+     <value>315775.024804067</value>
+    </variable>
+    <variable name="_TOKJ" type="xsd:double" units="KJ/MOL" length="1">
+     <value>2625.49963947983</value>
+    </variable>
+    <variable name="_TOKJOULE" type="xsd:double" units="KJ/MOL" length="1">
+     <value>2625.49963947983</value>
+    </variable>
+    <variable name="_TOKG" type="xsd:double" units="KG" length="1">
+     <value>0.16605390666E-26</value>
+    </variable>
+    <variable name="_ANG" type="xsd:double" units="BOHR" length="1">
+     <value>1.88972612462577</value>
+    </variable>
+    <variable name="_ANGSTROM" type="xsd:double" units="BOHR" length="1">
+     <value>1.88972612462577</value>
+    </variable>
+    <variable name="_RPAREF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RPADISS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IGNORE_UNDEF" type="xsd:double" length="1">
+     <value>2.0</value>
+    </variable>
+    <variable name="_STRICTCHECK" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SEWARD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!MULTI" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DFMULTI" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SEW_ONEEL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CPPDONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DKROLL_DONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FNUC_DONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FOCKDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_GRADONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HESSDONE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_INTDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SCFDONE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MODUL_BLOCK" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_SLATER" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_MRCC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_NBO6" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_NECI" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_AIMS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MODUL_HDF5" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MODUL_GECCO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_ISWINDOWS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MRCC_EXEC" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_FITC_AO_SAVED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FITC_MO_SAVED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_LSTYP" type="xsd:string" length="1">
+     <value>SEWARD</value>
+    </variable>
+    <variable name="_INTYP" type="xsd:string" length="1">
+     <value>INTS</value>
+    </variable>
+    <variable name="_GEOMTYP" type="xsd:string" length="1">
+     <value>XYZ</value>
+    </variable>
+    <variable name="_GRADTYP" type="xsd:string" length="1">
+     <value>ALASKA</value>
+    </variable>
+    <variable name="_DIRECT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DKHO" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_FNUC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SYNCM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_BASIS" type="xsd:string" length="1">
+     <value>CC-PVTZ</value>
+    </variable>
+    <variable name="_ZORIENT" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!ZORIENT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NELEC" type="xsd:double" length="1">
+     <value>56.0</value>
+    </variable>
+    <variable name="!SPIN" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_QSDSTEP" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_QSDIRC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_PROGRAM" type="xsd:string" length="1">
+     <value>CCSD</value>
+    </variable>
+    <variable name="_CPUSTEP" type="xsd:double" units="SEC" length="1">
+     <value>1820.76</value>
+    </variable>
+    <variable name="_SYSSTEP" type="xsd:double" units="SEC" length="1">
+     <value>87.01</value>
+    </variable>
+    <variable name="_WALLSTEP" type="xsd:double" units="SEC" length="1">
+     <value>1836.31</value>
+    </variable>
+    <variable name="!DFMP2" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DFSCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SCSGRD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NCEN" type="xsd:double" length="1">
+     <value>14.0</value>
+    </variable>
+    <variable name="_CPUTOT" type="xsd:double" units="SEC" length="1">
+     <value>1897.78</value>
+    </variable>
+    <variable name="_CPUCCSD" type="xsd:double" units="SEC" length="1">
+     <value>1854.18</value>
+    </variable>
+    <variable name="_SYSCCSD" type="xsd:double" units="SEC" length="1">
+     <value>79.44</value>
+    </variable>
+    <variable name="_WALLCCSD" type="xsd:double" units="SEC" length="1">
+     <value>1788.31999993324</value>
+    </variable>
+    <variable name="_CPUF12" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SYSF12" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_WALLF12" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CPUF12B" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SYSF12B" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_WALLF12B" type="xsd:double" units="SEC" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CPUTRANS" type="xsd:double" units="SEC" length="1">
+     <value>43.68</value>
+    </variable>
+    <variable name="_SYSTRANS" type="xsd:double" units="SEC" length="1">
+     <value>7.43</value>
+    </variable>
+    <variable name="_WALLTRANS" type="xsd:double" units="SEC" length="1">
+     <value>47.6900000572205</value>
+    </variable>
+    <variable name="_DFTEXFAC" type="xsd:double" units="AU" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_DMX" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMY" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMZ" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_DMX_SCF" type="xsd:double" units="AU" length="1">
+     <value>-1.16030659307614</value>
+    </variable>
+    <variable name="_DMY_SCF" type="xsd:double" units="AU" length="1">
+     <value>2.19230832748166</value>
+    </variable>
+    <variable name="_DMZ_SCF" type="xsd:double" units="AU" length="1">
+     <value>-0.912488077801861E-01</value>
+    </variable>
+    <variable name="_HOMO" type="xsd:double" length="1">
+     <value>28.1</value>
+    </variable>
+    <variable name="_EHOMO" type="xsd:double" length="1">
+     <value>-0.311836737926648</value>
+    </variable>
+    <variable name="_LUMO" type="xsd:double" length="1">
+     <value>29.1</value>
+    </variable>
+    <variable name="_ELUMO" type="xsd:double" length="1">
+     <value>0.117159107102713</value>
+    </variable>
+    <variable name="_EMP2" type="xsd:double" units="AU" length="1">
+     <value>-626.015831598969</value>
+    </variable>
+    <variable name="_EMP2_SING" type="xsd:double" units="AU" length="1">
+     <value>-0.774798429893435</value>
+    </variable>
+    <variable name="_EMP2_TRIP" type="xsd:double" units="AU" length="1">
+     <value>-0.434874739105652</value>
+    </variable>
+    <variable name="_EMP2_SCS" type="xsd:double" units="AU" length="1">
+     <value>-626.006505272397</value>
+    </variable>
+    <variable name="_ECSING" type="xsd:double" units="AU" length="1">
+     <value>-0.856059379758894</value>
+    </variable>
+    <variable name="_ECTRIP" type="xsd:double" units="AU" length="1">
+     <value>-0.39973572193385</value>
+    </variable>
+    <variable name="_ENERGC" type="xsd:double" units="AU" length="1">
+     <value>-626.061952666339</value>
+    </variable>
+    <variable name="_ENERG_CC" type="xsd:double" units="AU" length="1">
+     <value>-0.710257339467838E-01</value>
+    </variable>
+    <variable name="_ENERG_CV" type="xsd:double" units="AU" length="1">
+     <value>-0.455324697477032E-01</value>
+    </variable>
+    <variable name="_ENERG_VV" type="xsd:double" units="AU" length="1">
+     <value>-1.13923603267433</value>
+    </variable>
+    <variable name="_ENERGR" type="xsd:double" units="AU" length="1">
+     <value>-624.80615842997</value>
+    </variable>
+    <variable name="_ENERGY" type="xsd:double" units="AU" length="1">
+     <value>-626.061952666339</value>
+    </variable>
+    <variable name="_ENERGY_METHOD" type="xsd:string" length="1">
+     <value>CCSD</value>
+    </variable>
+    <variable name="_ENERGY_BASIS" type="xsd:string" length="1">
+     <value>cc-pVTZ</value>
+    </variable>
+    <variable name="_GEOMETRY_METHOD" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_GEOMETRY_BASIS" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_ENUC" type="xsd:double" units="AU" length="1">
+     <value>293.412252896878</value>
+    </variable>
+    <variable name="_GRADEXFAC" type="xsd:double" length="1">
+     <value>9999.0</value>
+    </variable>
+    <variable name="_GRADMETHOD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NMRMETHOD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NMRMAGNET" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GRID_FREEZE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!NEESE_INDEX" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_ITERATIONS" type="xsd:double" length="1">
+     <value>10.0</value>
+    </variable>
+    <variable name="_LASTNELEC" type="xsd:double" length="1">
+     <value>56.0</value>
+    </variable>
+    <variable name="_LASTSPIN" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_LASTSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MPP_PROG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MSNSTATES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RS2PHASE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NPROC_MPP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NPROC_SMP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_NUMSTEP" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_OPTSTEP" type="xsd:double" units="STEPS" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_ORBITAL" type="xsd:double" length="1">
+     <value>2100.2</value>
+    </variable>
+    <variable name="_PI" type="xsd:double" length="1">
+     <value>3.14159265358979</value>
+    </variable>
+    <variable name="_ECDIAG" type="xsd:double" units="AU" length="1">
+     <value>-0.234921764726665</value>
+    </variable>
+    <variable name="_EPDIAG" type="xsd:double" units="AU" length="1">
+     <value>-0.234921764726665</value>
+    </variable>
+    <variable name="_SEIG_MIN" type="xsd:double" length="1">
+     <value>0.610279503533979E-03</value>
+    </variable>
+    <variable name="_SEWPROP" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_STATUS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SYSTOT" type="xsd:double" units="SEC" length="1">
+     <value>95.07</value>
+    </variable>
+    <variable name="_T1DIAG" type="xsd:double" units="AU" length="1">
+     <value>0.112651013072823E-01</value>
+    </variable>
+    <variable name="_D1DIAG" type="xsd:double" units="AU" length="1">
+     <value>0.640695955454275E-01</value>
+    </variable>
+    <variable name="_D2DIAG" type="xsd:double" units="AU" length="1">
+     <value>0.165608012737412</value>
+    </variable>
+    <variable name="_VERSION" type="xsd:double" length="1">
+     <value>2023001.0</value>
+    </variable>
+    <variable name="_WALLTOT" type="xsd:double" units="SEC" length="1">
+     <value>1937.85</value>
+    </variable>
+    <variable name="_DATE" type="xsd:string" length="1">
+     <value>02-Aug-23</value>
+    </variable>
+    <variable name="_LASTORB" type="xsd:string" length="1">
+     <value>0</value>
+    </variable>
+    <variable name="_METHODC" type="xsd:string" length="1">
+     <value>CCSD</value>
+    </variable>
+    <variable name="_OUTPUT" type="xsd:string" length="1">
+     <value>/Users/peterk/current/PAPT/FinalProject/BHROT27MAX_methodtest/34c48373/ethylthiourea_0.molpro/run/1.molpro/1.out</value>
+    </variable>
+    <variable name="_PGROUP" type="xsd:string" length="1">
+     <value>C1</value>
+    </variable>
+    <variable name="_TIME" type="xsd:string" length="1">
+     <value>09:11:53</value>
+    </variable>
+    <variable name="_ANSATZ" type="xsd:string" length="1">
+     <value></value>
+    </variable>
+    <variable name="_LIBMOL" type="xsd:string" length="1">
+     <value>/usr/local/molpro/molpro_2023.1/lib/</value>
+    </variable>
+    <variable name="_VIGRDC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBCNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RGHFCNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SURFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!XSURFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!XPOLYREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!ROTREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!POLYREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIPREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIP4DREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIPROT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!DIP4DROT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PTREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PT4DREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VSCFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!PVCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMP2REC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMCSCFREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VMRCIREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBSTATEREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBSTATECNT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!VIBINFO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GAREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SCFORB" type="xsd:double" length="1">
+     <value>21002.0</value>
+    </variable>
+    <variable name="!DEFCORE" type="xsd:double" length="8">
+     <value>10.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="!SCORE" type="xsd:double" units="AU" length="8">
+     <value>1.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+     <value>0.0</value>
+    </variable>
+    <variable name="!CORETYPE" type="xsd:string" length="1">
+     <value>SMALL</value>
+    </variable>
+    <variable name="!NEWMOL" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!NEWSYM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SLFILES" type="xsd:string" length="1">
+     <value>slscratch</value>
+    </variable>
+    <variable name="_NGSSTO" type="xsd:double" length="1">
+     <value>9.0</value>
+    </variable>
+    <variable name="_SIN" type="xsd:string" length="1">
+     <value>SIN</value>
+    </variable>
+    <variable name="_COS" type="xsd:string" length="1">
+     <value>COS</value>
+    </variable>
+    <variable name="_TAN" type="xsd:string" length="1">
+     <value>TAN</value>
+    </variable>
+    <variable name="_ACOS" type="xsd:string" length="1">
+     <value>ACOS</value>
+    </variable>
+    <variable name="_ASIN" type="xsd:string" length="1">
+     <value>ASIN</value>
+    </variable>
+    <variable name="_ATAN" type="xsd:string" length="1">
+     <value>ATAN</value>
+    </variable>
+    <variable name="_COSH" type="xsd:string" length="1">
+     <value>COSH</value>
+    </variable>
+    <variable name="_SINH" type="xsd:string" length="1">
+     <value>SINH</value>
+    </variable>
+    <variable name="_TANH" type="xsd:string" length="1">
+     <value>TANH</value>
+    </variable>
+    <variable name="_ABS" type="xsd:string" length="1">
+     <value>ABS</value>
+    </variable>
+    <variable name="_MOD" type="xsd:string" length="1">
+     <value>MOD</value>
+    </variable>
+    <variable name="_ERF" type="xsd:string" length="1">
+     <value>ERF</value>
+    </variable>
+    <variable name="_REFC" type="xsd:string" length="1">
+     <value>REFC</value>
+    </variable>
+    <variable name="_ERFC" type="xsd:string" length="1">
+     <value>ERFC</value>
+    </variable>
+    <variable name="_HYPOT" type="xsd:string" length="1">
+     <value>HYPOT</value>
+    </variable>
+    <variable name="_J0" type="xsd:string" length="1">
+     <value>J0</value>
+    </variable>
+    <variable name="_J1" type="xsd:string" length="1">
+     <value>J1</value>
+    </variable>
+    <variable name="_JN" type="xsd:string" length="1">
+     <value>JN</value>
+    </variable>
+    <variable name="_GAMMA" type="xsd:string" length="1">
+     <value>GAMMA</value>
+    </variable>
+    <variable name="_LGAMMA" type="xsd:string" length="1">
+     <value>LGAMMA</value>
+    </variable>
+    <variable name="_Y0" type="xsd:string" length="1">
+     <value>Y0</value>
+    </variable>
+    <variable name="_Y1" type="xsd:string" length="1">
+     <value>Y1</value>
+    </variable>
+    <variable name="_YN" type="xsd:string" length="1">
+     <value>YN</value>
+    </variable>
+    <variable name="_EXP" type="xsd:string" length="1">
+     <value>EXP</value>
+    </variable>
+    <variable name="_LOG" type="xsd:string" length="1">
+     <value>LOG</value>
+    </variable>
+    <variable name="_LOG10" type="xsd:string" length="1">
+     <value>LOG10</value>
+    </variable>
+    <variable name="_SQRT" type="xsd:string" length="1">
+     <value>SQRT</value>
+    </variable>
+    <variable name="_INT" type="xsd:string" length="1">
+     <value>INT</value>
+    </variable>
+    <variable name="_NINT" type="xsd:string" length="1">
+     <value>NINT</value>
+    </variable>
+    <variable name="_MAX" type="xsd:string" length="1">
+     <value>MAX</value>
+    </variable>
+    <variable name="_MIN" type="xsd:string" length="1">
+     <value>MIN</value>
+    </variable>
+    <variable name="_COSMO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOIT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEDS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_COSMOEDCORR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FEPSI" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_IsMM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_NSYM" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_System_BitSw" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Unique_atoms" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GRAD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_MAXUPD_Hess" type="xsd:double" length="1">
+     <value>5.0</value>
+    </variable>
+    <variable name="_SL_N_PRINT_COD" type="xsd:double" length="1">
+     <value>5.0</value>
+    </variable>
+    <variable name="_SL_PRINT_CODES" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_BasType" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Energy_Pred" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_New_Coords" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Total_Nuclea" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Highest_Mltp" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Ref_Geom" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Symmetry_ope" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SL_agrad" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdMax" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdNorm" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_GrdRMS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hss_Q" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hss_X" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_BMxOld" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_KtB" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_TROld" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_No_of_Intern" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_Hess" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SL_K" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LATTICE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!NEWLATTICE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LATGRAD_VAR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SEW_LATTICE" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!AIC_ONEEL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LOCAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SAVEDOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!SAVEDOM_HF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM_HF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!HESSREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!FREQREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!NMODREC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!GTASKS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!HTASKS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!SAVEDOM_EOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!RESTDOM_EOM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!GRADSTATE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!DEBUG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!CFIT_CPHF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RDOMAUX_CPHF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!THRAO_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRMO_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THROV_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRSW_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRPROD_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRAOPR_CPHF" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!CFIT_SCFGRD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!RDOMAUX_SCFGRD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!THRAO_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRMO_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THROV_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRSW_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRPROD_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!THRAOPR_SCFGRD" type="xsd:double" length="1">
+     <value>0.1E-11</value>
+    </variable>
+    <variable name="!LOCFIT_SCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!LOCFIT_MP2" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RIDOM" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!CC2_METHOD" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_BASIS2006" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_SVDDEL" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELA" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELP" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELF" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDEL_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELA_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELP_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELF_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SVDDELS_ABS" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_MAXBASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!OPT_CONICAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!CLEARSP_JGRID" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDHYBR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_STATEGRAD" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_4EXT_NDISKS" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!EMBEDFLAG" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!EMBED" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_F12" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBEDNUC" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBEDENERGY" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_DFC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!NUM_VOIDS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_IBODY" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBE_CORR" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_PROJ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMB_PROJ_ZMU" type="xsd:double" length="1">
+     <value>1000000.0</value>
+    </variable>
+    <variable name="!CORRECTION_HF" type="xsd:double" units="AU" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_AORB" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_NACORR" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_MP2" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_TRUNC_PERTURBATION" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_FROZEN" type="xsd:double" units="R" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!EMBED_ACTIVE" type="xsd:double" units="R" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CHANGE_BASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RESTORE_BASIS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FIX_EMBED_GUESS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EMBED_SCF" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NEOBAS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_NEOOVE" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_PRINEO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_T" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_F" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HUZINAGA_CORRECT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="!FASTLATGRAD" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="!FASTVLAMBDA" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!IFORCE" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="!USESYM" type="xsd:double" length="1">
+     <value>-1.0</value>
+    </variable>
+    <variable name="_SINDEX" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_OSV" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_PNO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_PNOCC" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_TNO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_TNOIT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_PAO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_AVDOM_LMO" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CC2OSV_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_EOMCCSD_CONV" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_TMADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_PROPADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_LEN_VirQ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDCC2LR_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GRDADC2_FLAG" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_RO_VGLOBAL" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_OPT" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_FREQ" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_HESS" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_CMRCC_callName" type="xsd:string" length="1">
+     <value>EMPTY</value>
+    </variable>
+    <variable name="_CMRCC_callCount" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_GECCO_CIROOT" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_SYM_CATION" type="xsd:double" length="1">
+     <value>1.0</value>
+    </variable>
+    <variable name="_MON_A" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MON_B" type="xsd:double" length="1">
+     <value>0.0</value>
+    </variable>
+    <variable name="_MAXGEOM" type="xsd:double" length="1">
+     <value>100.0</value>
+    </variable>
+    <variable name="!MAXGEOM" type="xsd:double" length="1">
+     <value>100.0</value>
+    </variable>
+    <variable name="GX1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.62527800830666</value>
+    </variable>
+    <variable name="GY1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>2.89809627957375</value>
+    </variable>
+    <variable name="GZ1" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.3936045477419E-01</value>
+    </variable>
+    <variable name="GX2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.3425538827627</value>
+    </variable>
+    <variable name="GY2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.7374537000331</value>
+    </variable>
+    <variable name="GZ2" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.3150100176433E-01</value>
+    </variable>
+    <variable name="GX3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.36138843311159</value>
+    </variable>
+    <variable name="GY3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.47998433732143</value>
+    </variable>
+    <variable name="GZ3" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.1403975045456E-01</value>
+    </variable>
+    <variable name="GX4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.22542645347882</value>
+    </variable>
+    <variable name="GY4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.72812870820658</value>
+    </variable>
+    <variable name="GZ4" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.9515084552755E-01</value>
+    </variable>
+    <variable name="GX5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-1.56562722239652</value>
+    </variable>
+    <variable name="GY5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.73828988669266</value>
+    </variable>
+    <variable name="GZ5" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.7257090139012E-01</value>
+    </variable>
+    <variable name="GX6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.64293020269652</value>
+    </variable>
+    <variable name="GY6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-2.11955820431433</value>
+    </variable>
+    <variable name="GZ6" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.35396039167116</value>
+    </variable>
+    <variable name="GX7" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-2.11587316489113</value>
+    </variable>
+    <variable name="GY7" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.9765190100243E-01</value>
+    </variable>
+    <variable name="GZ7" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.3875317825241E-01</value>
+    </variable>
+    <variable name="GX8" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-2.02216029547534</value>
+    </variable>
+    <variable name="GY8" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-1.61654192112677</value>
+    </variable>
+    <variable name="GZ8" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.7076902579688E-01</value>
+    </variable>
+    <variable name="GX9" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.34388428549199</value>
+    </variable>
+    <variable name="GY9" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.47744786420014</value>
+    </variable>
+    <variable name="GZ9" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.21511755062804</value>
+    </variable>
+    <variable name="GX10" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.96428971121995</value>
+    </variable>
+    <variable name="GY10" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.77250469141176</value>
+    </variable>
+    <variable name="GZ10" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.92748736392476</value>
+    </variable>
+    <variable name="GX11" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-1.00987152277285</value>
+    </variable>
+    <variable name="GY11" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.8268441892815</value>
+    </variable>
+    <variable name="GZ11" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.8310916029436</value>
+    </variable>
+    <variable name="GX12" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.29351690735313</value>
+    </variable>
+    <variable name="GY12" type="xsd:double" units="ANGSTROM" length="1">
+     <value>2.84225750698511</value>
+    </variable>
+    <variable name="GZ12" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.89453694539721</value>
+    </variable>
+    <variable name="GX13" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.7941403827619E-01</value>
+    </variable>
+    <variable name="GY13" type="xsd:double" units="ANGSTROM" length="1">
+     <value>3.83516192614587</value>
+    </variable>
+    <variable name="GZ13" type="xsd:double" units="ANGSTROM" length="1">
+     <value>-0.9217618418552E-01</value>
+    </variable>
+    <variable name="GX14" type="xsd:double" units="ANGSTROM" length="1">
+     <value>1.2290593777612</value>
+    </variable>
+    <variable name="GY14" type="xsd:double" units="ANGSTROM" length="1">
+     <value>2.90822932438525</value>
+    </variable>
+    <variable name="GZ14" type="xsd:double" units="ANGSTROM" length="1">
+     <value>0.86522986266675</value>
+    </variable>
+   </variables>
+  </molecule>
+  <input>
+   <p>geometry={</p>
+   <p>14</p>
+   <p>   C   0.62527800830666      2.89809627957375     -0.03936045477419</p>
+   <p>   C   -0.34255388276270      1.73745370003310     -0.03150100176433</p>
+   <p>   N   0.36138843311159      0.47998433732143      0.01403975045456</p>
+   <p>   C   -0.22542645347882     -0.72812870820658      0.09515084552755</p>
+   <p>   N   -1.56562722239652     -0.73828988669266     -0.07257090139012</p>
+   <p>   S   0.64293020269652     -2.11955820431433      0.35396039167116</p>
+   <p>   H   -2.11587316489113      0.09765190100243     -0.03875317825241</p>
+   <p>   H   -2.02216029547534     -1.61654192112677      0.07076902579688</p>
+   <p>   H   1.34388428549199      0.47744786420014      0.21511755062804</p>
+   <p>   H   -0.96428971121995      1.77250469141176     -0.92748736392476</p>
+   <p>   H   -1.00987152277285      1.82684418928150      0.83109160294360</p>
+   <p>   H   1.29351690735313      2.84225750698511     -0.89453694539721</p>
+   <p>   H   0.07941403827619      3.83516192614587     -0.09217618418552</p>
+   <p>   H   1.22905937776120      2.90822932438525      0.86522986266675</p>
+   <p>}</p>
+   <p>basis=cc-pVTZ</p>
+   <p>core,small</p>
+   <p>hf; ccsd</p>
+   <p>{put,xml;noorbitals,nobasis}</p>
+  </input>
+  <diagnostics warnings="0"/>
+ </job>
+</molpro>

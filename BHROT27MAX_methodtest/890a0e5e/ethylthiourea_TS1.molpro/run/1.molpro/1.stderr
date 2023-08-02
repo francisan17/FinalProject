@@ -1,0 +1,7 @@
+Abort(868841871): Fatal error in internal_Finalize: Other MPI error, error stack:
+internal_Finalize(50)...........: MPI_Finalize failed
+MPII_Finalize(400)..............: 
+MPID_Finalize(652)..............: 
+MPIDI_OFI_mpi_finalize_hook(830): 
+flush_send_queue(789)...........: 
+MPIDI_OFI_handle_cq_error(627)..: OFI poll failed (ofi_events.c:627:MPIDI_OFI_handle_cq_error:Input/output error)

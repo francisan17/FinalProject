@@ -1,0 +1,4 @@
+[mpiexec@pjk2022.local] Sending Ctrl-C to processes as requested
+[mpiexec@pjk2022.local] Press Ctrl-C again to force abort
+    0: fehler on processor   0                                          1 (0x1).
+    0: In mpi_utils.cpp [MPIGA_Error]: now exiting...
